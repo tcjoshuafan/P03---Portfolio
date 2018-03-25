@@ -247,16 +247,46 @@ header > nav > ul > li > nav > ul > li:hover > a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
 
-.glitch {
-  color: #295ca4;
-  font-size: 50px;
-  position: relative; }
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-@media (min-width: 500px) {
-  .glitch {
-    font-size: 10vw; } }
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
-#glitch-ux {
-  display: none; }
+.projects-text-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 1rem; }
+
+.projects-text-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  margin-left: 0.5rem; }

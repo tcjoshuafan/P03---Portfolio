@@ -47,9 +47,7 @@ body {
   min-height: 100%;
   text-rendering: optimizeLegibility;
 }
-
 //START JQUERY RESPONSIVE NAVBAR FROM https://www.adam-bray.com/2017/02/18/create-a-html-5-and-css-3-mobile-navigation-bar/
-
 header {
   background-color: rgb(140, 193, 193);
   border-bottom: 1px solid rgba(0,0,0,.15);
@@ -250,29 +248,37 @@ header > nav > ul > li > nav > ul > li:hover > a {
     width: 196px;
   }
 }
-
 //END JQUERY RESPONSIVE NAVBAR FROM https://www.adam-bray.com/2017/02/18/create-a-html-5-and-css-3-mobile-navigation-bar/
-
-.banner{
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
 }
 
-.glitch{
-  color: #295ca4;
-  font-size: 50px;
-  position: relative;
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (min-width: 500px){
-  .glitch{
-    font-size: 10vw;
-  }
+.projects-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#glitch-ux{
-  display:none;
+.projects-text-item {
+  flex: 0 1 50%;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.projects-text-image {
+  flex: 0 1 50%;
+  margin-left: 0.5rem;
 }
