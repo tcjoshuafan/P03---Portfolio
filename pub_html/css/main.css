@@ -1,9 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  outline: none; }
 
 body {
   font-family: Poppins, Roboto, sans-serif; }
@@ -23,215 +21,36 @@ h4 {
 p {
   font-size: 24px; }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+.navbar {
+  background: beige; }
 
-body {
-  background: #eee;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 300;
-  font-weight: 400;
-  height: 100%;
-  min-height: 100%;
-  text-rendering: optimizeLegibility; }
-
-header {
-  background-color: #8cc1c1;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+.navbar-links {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
-header > div#logo {
-  line-height: 70px;
-  position: relative; }
+.navbar-links li:first-of-type {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  background: pink; }
 
-header > .menuDown {
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
+.navbar-links li {
+  -ms-flex-preferred-size: 5%;
+  flex-basis: 5%; }
 
-header > .menuUp {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-header > div#logo > h1 {
-  color: white;
-  font-weight: 300;
-  font-size: 32px;
-  text-transform: lowercase; }
-
-header > div#logo > div#navToggle {
-  background-color: rgba(0, 0, 0, 0.15);
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: 300ms all ease;
-  -o-transition: 300ms all ease;
-  transition: 300ms all ease; }
-
-header > div#logo > div#navToggle:hover {
-  background-color: rgba(0, 0, 0, 0.1); }
-
-header > div#logo > div#navToggle > a {
-  color: rgba(255, 255, 255, 0.85);
-  display: block;
-  font-size: 0.85em;
-  font-weight: 600;
-  padding: 0 2.5rem;
-  text-decoration: none;
-  -webkit-transition: 300ms all ease;
-  -o-transition: 300ms all ease;
-  transition: 300ms all ease; }
-
-header > div#logo > div#navToggle:hover > a {
-  color: white; }
-
-header > nav {
-  background-color: transparent;
-  display: none;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-transform: 300ms all ease;
-  -ms-transform: 300ms all ease;
-  transform: 300ms all ease; }
-
-header nav > ul {
-  list-style-type: none; }
-
-header nav > ul > li {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-  position: relative; }
-
-header nav > ul > li:last-of-type {
-  border-bottom: none; }
-
-header nav > ul > li > a {
-  display: block;
-  color: rgba(0, 0, 0, 0.65);
-  font-weight: 700;
-  padding: 1.5rem 0;
-  text-decoration: none;
-  -webkit-transition: 250ms all ease;
-  -o-transition: 250ms all ease;
-  transition: 250ms all ease; }
-
-header nav > ul > li > a span.toggle {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 3rem;
-  color: rgba(0, 0, 0, 0.25);
-  font-size: 0.75em;
-  font-weight: 500;
-  padding: 2px 8px;
-  text-transform: lowercase; }
-
-header nav > ul > li > a span.caret {
-  display: none; }
-
-header > nav > ul > li:hover > a {
-  color: #8cc1c1; }
-
-header > nav > ul > li > nav {
-  background-color: #333333;
-  border-radius: 1.5em;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  display: none;
-  overflow: hidden;
-  position: absolute;
-  right: 5%;
-  width: 90%;
-  z-index: 100; }
-
-header > nav > ul > li > nav > ul > li > a {
-  color: rgba(255, 255, 255, 0.85);
-  -webkit-transition: 300ms all ease;
-  -o-transition: 300ms all ease;
-  transition: 300ms all ease; }
-
-header > nav > ul > li > nav > ul > li:hover > a {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white; }
-
-/* Medium screens */
-@media all and (min-width: 850px) {
-  header > div#logo > div#navToggle {
-    display: none; }
-  header {
-    background-color: white;
-    -webkit-box-orient: horizontal;
+@media (max-width: 500px) {
+  .navbar, .navbar ul {
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    line-height: 90px;
-    padding: 0 3rem;
-    position: fixed;
-    text-align: left;
-    width: 100%; }
-  header > div#logo {
-    background-color: transparent;
-    line-height: 90px; }
-  header > div#logo > h1 {
-    color: #8cc1c1; }
-  header > nav {
-    background-color: transparent;
-    display: block; }
-  header > nav > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-  header nav > ul > li {
-    border-bottom: none; }
-  header nav > ul > li > a {
-    padding: 0 1.25rem; }
-  header nav > ul > li > a span.toggle {
-    display: none; }
-  header nav > ul > li > a span.caret {
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid rgba(0, 0, 0, 0.65);
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-radius: 1px;
-    content: "";
-    display: inline-block;
-    height: 0;
-    margin: 0 0 0 0.25rem;
-    -webkit-transition: 250ms all ease;
-    -o-transition: 250ms all ease;
-    transition: 250ms all ease;
-    width: 0;
-    vertical-align: middle; }
-  header nav > ul > li:hover > a span.caret {
-    border-top-color: #8cc1c1;
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg); }
-  header > nav > ul > li:hover > nav {
-    background-color: #333333;
-    border-radius: 0.25em;
-    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    display: block;
-    line-height: 3em;
-    right: -50%;
-    width: 196px; } }
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .banner {
   display: -webkit-box;
@@ -248,7 +67,8 @@ header > nav > ul > li > nav > ul > li:hover > a {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 5px solid black; }
 
 .projects {
   display: -webkit-box;
@@ -289,4 +109,217 @@ header > nav > ul > li > nav > ul > li:hover > a {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  max-width: 100%; }
+
+.glitch {
+  color: #295ca4;
+  font-size: 32px;
+  position: relative; }
+
+#glitch-business {
+  display: none; }
+
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(57px, 9999px, 7px, 0); }
+  5% {
+    clip: rect(20px, 9999px, 73px, 0); }
+  10% {
+    clip: rect(51px, 9999px, 51px, 0); }
+  15% {
+    clip: rect(48px, 9999px, 5px, 0); }
+  20% {
+    clip: rect(96px, 9999px, 77px, 0); }
+  25% {
+    clip: rect(76px, 9999px, 61px, 0); }
+  30% {
+    clip: rect(18px, 9999px, 67px, 0); }
+  35% {
+    clip: rect(34px, 9999px, 77px, 0); }
+  40% {
+    clip: rect(72px, 9999px, 79px, 0); }
+  45% {
+    clip: rect(85px, 9999px, 81px, 0); }
+  50% {
+    clip: rect(62px, 9999px, 28px, 0); }
+  55% {
+    clip: rect(82px, 9999px, 93px, 0); }
+  60% {
+    clip: rect(66px, 9999px, 34px, 0); }
+  65% {
+    clip: rect(53px, 9999px, 91px, 0); }
+  70% {
+    clip: rect(17px, 9999px, 10px, 0); }
+  75% {
+    clip: rect(37px, 9999px, 75px, 0); }
+  80% {
+    clip: rect(67px, 9999px, 11px, 0); }
+  85% {
+    clip: rect(70px, 9999px, 14px, 0); }
+  90% {
+    clip: rect(95px, 9999px, 3px, 0); }
+  95% {
+    clip: rect(22px, 9999px, 49px, 0); }
+  100% {
+    clip: rect(96px, 9999px, 35px, 0); } }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(57px, 9999px, 7px, 0); }
+  5% {
+    clip: rect(20px, 9999px, 73px, 0); }
+  10% {
+    clip: rect(51px, 9999px, 51px, 0); }
+  15% {
+    clip: rect(48px, 9999px, 5px, 0); }
+  20% {
+    clip: rect(96px, 9999px, 77px, 0); }
+  25% {
+    clip: rect(76px, 9999px, 61px, 0); }
+  30% {
+    clip: rect(18px, 9999px, 67px, 0); }
+  35% {
+    clip: rect(34px, 9999px, 77px, 0); }
+  40% {
+    clip: rect(72px, 9999px, 79px, 0); }
+  45% {
+    clip: rect(85px, 9999px, 81px, 0); }
+  50% {
+    clip: rect(62px, 9999px, 28px, 0); }
+  55% {
+    clip: rect(82px, 9999px, 93px, 0); }
+  60% {
+    clip: rect(66px, 9999px, 34px, 0); }
+  65% {
+    clip: rect(53px, 9999px, 91px, 0); }
+  70% {
+    clip: rect(17px, 9999px, 10px, 0); }
+  75% {
+    clip: rect(37px, 9999px, 75px, 0); }
+  80% {
+    clip: rect(67px, 9999px, 11px, 0); }
+  85% {
+    clip: rect(70px, 9999px, 14px, 0); }
+  90% {
+    clip: rect(95px, 9999px, 3px, 0); }
+  95% {
+    clip: rect(22px, 9999px, 49px, 0); }
+  100% {
+    clip: rect(96px, 9999px, 35px, 0); } }
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: #295ca4;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse; }
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(96px, 9999px, 91px, 0); }
+  5% {
+    clip: rect(17px, 9999px, 65px, 0); }
+  10% {
+    clip: rect(84px, 9999px, 66px, 0); }
+  15% {
+    clip: rect(50px, 9999px, 63px, 0); }
+  20% {
+    clip: rect(53px, 9999px, 27px, 0); }
+  25% {
+    clip: rect(52px, 9999px, 67px, 0); }
+  30% {
+    clip: rect(43px, 9999px, 66px, 0); }
+  35% {
+    clip: rect(94px, 9999px, 10px, 0); }
+  40% {
+    clip: rect(86px, 9999px, 12px, 0); }
+  45% {
+    clip: rect(39px, 9999px, 12px, 0); }
+  50% {
+    clip: rect(85px, 9999px, 70px, 0); }
+  55% {
+    clip: rect(72px, 9999px, 81px, 0); }
+  60% {
+    clip: rect(56px, 9999px, 74px, 0); }
+  65% {
+    clip: rect(73px, 9999px, 64px, 0); }
+  70% {
+    clip: rect(68px, 9999px, 55px, 0); }
+  75% {
+    clip: rect(60px, 9999px, 22px, 0); }
+  80% {
+    clip: rect(43px, 9999px, 19px, 0); }
+  85% {
+    clip: rect(76px, 9999px, 89px, 0); }
+  90% {
+    clip: rect(95px, 9999px, 63px, 0); }
+  95% {
+    clip: rect(18px, 9999px, 56px, 0); }
+  100% {
+    clip: rect(30px, 9999px, 78px, 0); } }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(96px, 9999px, 91px, 0); }
+  5% {
+    clip: rect(17px, 9999px, 65px, 0); }
+  10% {
+    clip: rect(84px, 9999px, 66px, 0); }
+  15% {
+    clip: rect(50px, 9999px, 63px, 0); }
+  20% {
+    clip: rect(53px, 9999px, 27px, 0); }
+  25% {
+    clip: rect(52px, 9999px, 67px, 0); }
+  30% {
+    clip: rect(43px, 9999px, 66px, 0); }
+  35% {
+    clip: rect(94px, 9999px, 10px, 0); }
+  40% {
+    clip: rect(86px, 9999px, 12px, 0); }
+  45% {
+    clip: rect(39px, 9999px, 12px, 0); }
+  50% {
+    clip: rect(85px, 9999px, 70px, 0); }
+  55% {
+    clip: rect(72px, 9999px, 81px, 0); }
+  60% {
+    clip: rect(56px, 9999px, 74px, 0); }
+  65% {
+    clip: rect(73px, 9999px, 64px, 0); }
+  70% {
+    clip: rect(68px, 9999px, 55px, 0); }
+  75% {
+    clip: rect(60px, 9999px, 22px, 0); }
+  80% {
+    clip: rect(43px, 9999px, 19px, 0); }
+  85% {
+    clip: rect(76px, 9999px, 89px, 0); }
+  90% {
+    clip: rect(95px, 9999px, 63px, 0); }
+  95% {
+    clip: rect(18px, 9999px, 56px, 0); }
+  100% {
+    clip: rect(30px, 9999px, 78px, 0); } }
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: #295ca4;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse; }
+
+@media (min-width: 500px) {
+  .glitch {
+    font-size: 5vw; } }

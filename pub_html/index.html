@@ -10,14 +10,10 @@
   </head>
   <body>
     <header>
-      <!--LOGO -->
-      <div class="menuUp" id="logo">
-        <h1>Joshua Fan.</h1>
-        <div id="navToggle"><a href="#">Menu</a></div>
-      </div>
       <!--NAVBAR-->
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="#">joshua fan.</a></li>
           <li><a href="#">UX/UI</a></li>
           <li> <a href="#">Marketing</a></li>
           <li><a href="#">About</a></li>
@@ -29,7 +25,9 @@
       <div class="banner-text">
         <h2>Hello! I'm Josh.</h2>
         <p>An odd combination of </p>
-        <h3>UX Design/Business Strategy</h3>
+        <div class="glitch" id="glitch-business" data-text="UX Designer">UX&nbsp;Designer</div>
+        <div class="glitch" id="glitch-ux" data-text="Business Strategist">Business&nbsp;Strategist</div>
+        <h2>Testing</h2>
       </div>
     </section>
     <section class="projects">
@@ -42,6 +40,5 @@
       </div>
     </section>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
