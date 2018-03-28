@@ -1,5 +1,3 @@
-
-
 setInterval(function(){
   $("#glitch-business").toggle();
   setTimeout(function(){
@@ -20,3 +18,6 @@ $(function() {
     $('.navbar-links').toggleClass('open');
   });
 });
+
+
+var mixer = mixitup('.projects')
