@@ -7,16 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>P03 Portfolio</title>
+    <title>JF - UX/Business Strategist</title>
   </head>
   <body>
     <header>
-      <!--NAVBAR-->
-      <nav class="navbar"><a href="#" id="logo">joshua fan.</a><a class="toggle-button"><img class="menu" src="images/icons/menu.png"></a>
+      <nav class="navbar"><a href="index.html" id="logo">joshua fan.</a><a class="toggle-button"><img class="menu" src="images/icons/menu.png"></a>
         <ul class="navbar-links">
-          <li><a href="#">About</a></li>
-          <li> <a href="#">Resume</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a class="hvr-underline-from-left " href="#">About</a></li>
+          <li> <a class="hvr-underline-from-left " href="#">Resume</a></li>
+          <li><a class="hvr-underline-from-left " href="#">LinkedIn</a></li>
         </ul>
       </nav>
     </header>
@@ -24,39 +23,44 @@
       <div class="banner-text">
         <h3>Hello! I'm Josh.</h3>
         <p>I'm an odd combination of a</p>
-        <div class="glitch" id="glitch-business" data-text="UX Designer">UX Designer</div>
-        <div class="glitch" id="glitch-ux" data-text="Business Strategist">Business Strategist</div>
+        <div class="glitch" id="glitch-business" data-text="UX&nbsp;Designer">UX&nbsp;Designer</div>
+        <div class="glitch" id="glitch-ux" data-text="Business&nbsp;Strategist">Business&nbsp;Strategist</div>
       </div>
     </section>
     <section class="projects-filter">
       <h3>Projects</h3>
       <div class="button-container">
-        <button type="button" data-filter="all">All</button>
-        <button type="button" data-filter=".cat-ux">User Experience</button>
-        <button type="button" data-filter=".cat-mark">Marketing</button>
+        <button class="filter-button hvr-underline-from-left" type="button" data-filter="all">All</button>
+        <button class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-ux">User Experience</button>
+        <button class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-mark">Marketing</button>
       </div>
     </section>
     <section class="projects">
-      <div class="mix cat-ux projects-container" data-order="1"><a href="#"><img src="images/gallery/via.png" alt=""></a>
+      <div class="mix cat-ux projects-container"><a class="hvr-bob" href="via.html"><img src="images/gallery/via.png" alt=""></a>
         <h3>VIA Journey</h3>
         <p>A digital solution designed to address VIA Rail's declining ridership, VIA Journey realigns VIA Rail's brand proposition through the concept that a journey is as valuable as the destination. </p>
       </div>
-      <div class="mix cat-mark projects-container" data-order="2"><a href="#"><img src="images/gallery/intel-extreme-rig.png" alt=""></a>
+      <div class="mix cat-mark projects-container"><a class="hvr-bob" href="#"><img src="images/gallery/intel-extreme-rig.png" alt=""></a>
         <h3>Intel Extreme Rig Challenge 2017</h3>
         <p>Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. </p>
       </div>
-      <div class="mix cat-ux projects-container" data-order="3"><a href="#"><img src="images/gallery/toyota-guardian.png" alt=""></a>
+      <div class="mix cat-ux projects-container"><a class="hvr-bob" href="#"><img src="images/gallery/toyota-guardian.png" alt=""></a>
         <h3>Toyota Guardian</h3>
         <p>A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.</p>
         <p>Mentored by Chelsea Garber from ★ Inamoto &amp; Co.</p>
       </div>
-      <div class="mix cat-mark projects-container" data-order="4"><a href="#"><img src="images/gallery/market-research.png" alt=""></a>
+      <div class="mix cat-mark projects-container"><a class="hvr-bob" href="#"><img src="images/gallery/market-research.png" alt=""></a>
         <h3>Market Research + Analysis</h3>
         <p>A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.</p>
       </div>
     </section>
+    <section class="footer">
+      <p>copyright Joshua Fan 2018<sup>©</sup></p>
+      <p>portfolio handcrafted with the finest, free-trade organic code</p>
+    </section>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mixit_trigger.js"></script>
   </body>
 </html>

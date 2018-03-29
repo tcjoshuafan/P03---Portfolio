@@ -7,118 +7,59 @@ html(lang="en")
     link(href='https://fonts.googleapis.com/css?family=Poppins', rel='stylesheet')
     link(rel="stylesheet" type="text/css" href="css/normalize.css")
     link(rel="stylesheet" type="text/css" href="css/main.css")
-    title P03 Portfolio
+    title JF - UX/Business Strategist
 
   body
     header
-      //NAVBAR
-      nav(class="navbar")
-        a(href="#" id="logo") joshua fan.
-        a(class="toggle-button")
-          img(src="images/icons/menu.png" class="menu")
-        ul(class="navbar-links")
-          li
-            a(href="#") About
-          li 
-            a(href="#") Resume
-          li
-            a(href="#") LinkedIn
-
+      //- //NAVBAR
+      include components/nav.pug
 
     section(class="banner")
       div(class="banner-text")
         h3 Hello! I'm Josh.
         p I'm an odd combination of a
-        div(class="glitch" id="glitch-business" data-text="UX Designer") UX Designer
-        div(class="glitch" id="glitch-ux" data-text="Business Strategist") Business Strategist
+        div(class="glitch" id="glitch-business" data-text!="UX&nbsp;Designer") UX&nbsp;Designer
+        div(class="glitch" id="glitch-ux" data-text!="Business&nbsp;Strategist") Business&nbsp;Strategist
         
     section(class="projects-filter")
       h3 Projects
       div(class="button-container")
-        button(type="button" data-filter="all") All
-        button(type="button" data-filter=".cat-ux") User Experience
-        button(type="button" data-filter=".cat-mark") Marketing
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter="all") All
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-ux") User Experience
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-mark") Marketing
         
     section(class="projects")
       
-      div(class="mix cat-ux projects-container" data-order="1")
-        a(href="#")
+      div(class="mix cat-ux projects-container")
+        a(href="via.html" class="hvr-bob")
           img(src="images/gallery/via.png" alt="")
         h3 VIA Journey
         p A digital solution designed to address VIA Rail's declining ridership, VIA Journey realigns VIA Rail's brand proposition through the concept that a journey is as valuable as the destination. 
         
-      div(class="mix cat-mark projects-container" data-order="2")
-        a(href="#")
+      div(class="mix cat-mark projects-container")
+        a(href="#" class="hvr-bob")
           img(src="images/gallery/intel-extreme-rig.png" alt="")
         h3 Intel Extreme Rig Challenge 2017
         p Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. 
           
-      div(class="mix cat-ux projects-container" data-order="3")
-        a(href="#")
+      div(class="mix cat-ux projects-container")
+        a(href="#" class="hvr-bob")
           img(src="images/gallery/toyota-guardian.png" alt="")
         h3 Toyota Guardian
         p A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.
         p Mentored by Chelsea Garber from ★ Inamoto &amp; Co.
         
-      div(class="mix cat-mark projects-container" data-order="4")
-        a(href="#")
+      div(class="mix cat-mark projects-container")
+        a(href="#" class="hvr-bob")
           img(src="images/gallery/market-research.png" alt="")
         h3 Market Research + Analysis
         p A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.
-          
         
-        
-    
-  
-    
-    //- section(class="gallery")
-    //-   .toolbar.mb2.mt2
-    //-     button.btn.fil-cat(href='', data-rel='all') All
-    //-     button.btn.fil-cat(data-rel='web') Websites
-    //-     button.btn.fil-cat(data-rel='flyers') Flyers
-    //-     button.btn.fil-cat(data-rel='bcards') Business Cards
-    //-   #portfolio
-    //-     .tile.scale-anm.web.all
-    //-       img(src='images/gallery/akqa.png', alt='')
-    //-     .tile.scale-anm.bcards.all
-    //-       img(src='images/gallery/discord.png', alt='')
-    //-     .tile.scale-anm.web.all
-    //-       img(src='images/gallery/intel-extreme-rig.png', alt='')
-    //-     .tile.scale-anm.web.all
-    //-       img(src='images/gallery/toyota-guardian.png', alt='')
-    //-     .tile.scale-anm.flyers.all
-    //-       img(src='images/gallery/via.png', alt='')
-    //-     .tile.scale-anm.bcards.all
-    //-       img(src='images/gallery/votescope.png', alt='')
-    //-     .tile.scale-anm.flyers.all
-    //-       img(src='images/gallery/market-research.png', alt='')
-    //-     .tile.scale-anm.flyers.all
-    //-       img(src='/images/gallery/akqa.png', alt='')
-    //-     //- .tile.scale-anm.web.all
-    //-     //-   img(src='https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290', alt='')
-    //-     //- .tile.scale-anm.flyers.all
-    //-     //-   img(src='https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=200', alt='')
-    //-     //- .tile.scale-anm.web.all
-    //-     //-   img(src='http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg', alt='')
-    //-     //- .tile.scale-anm.bcards.all
-    //-     //-   img(src='http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg', alt='')
-    //-     //- .tile.scale-anm.web.all
-    //-     //-   img(src='https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190', alt='')
-    //-     //- .tile.scale-anm.bcards.all
-    //-     //-   img(src='http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg', alt='')
-    //-     //- .tile.scale-anm.web.all
-    //-     //-   img(src='http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg', alt='')
-    //-     //- .tile.scale-anm.web.all
-    //-     //-   img(src='https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190', alt='')
-    //-     //- .tile.scale-anm.bcards.all
-    //-     //-   img(src='https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290', alt='')
-            
-      div(style='clear:both;')
-
-
-
-
+    //- FOOTER
+    include components/footer.pug
+      
 
     script(src="js/jquery-3.3.1.js")
     script(src="js/mixitup.min.js")
     script(src="js/main.js")
+    script(src="js/mixit_trigger.js")
