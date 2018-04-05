@@ -1,0 +1,118 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href='https://fonts.googleapis.com/css?family=Poppins', rel='stylesheet')
+    link(rel="stylesheet" type="text/css" href="css/normalize.css")
+    link(rel="stylesheet" type="text/css" href="css/jquery.background-video.css")
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    title JF - NCIX Market Research 
+
+body
+  header
+    
+    //-NAVBAR
+    include components/nav.pug
+    
+    //-HERO 
+    section(class="banner jquery-background-video-wrapper" id="via_hero")
+      video(class="bg-video jquery-background-video" loop autoplay)
+        source(src="videos/ncix_hero.webm") 
+
+    section(class="content")
+      div(class="content-container")
+        
+        div(class="content-object" id="via-intro-text")
+          h2 Market Watch: Research + Analysis
+          p In Q1 2017, I conducted market research on NCIX PC's competitors across North America. My research covered 16 high-priority companies and over 500 products, and I presented my analysis on competitors' changing products, prices, and strategies. Crucially, I provided business recommendations and actionables on how NCIX PC could evolve its product strategy as a response to North America's changing retail landscape. 
+          p Role: Researcher, Analyst
+          p Results:
+          ul
+            li provided an updated view on current market conditions
+            li quantified a growing threat in the behavior of NCIX PC's competitors
+            li as a response to this new threat, used the documented behavior of larger competitors to proposed a new product strategy for NCIX PC, which was later implemented
+          
+        div(class="content-object" id="via-intro-side")
+          p Team:  Individual Project 
+          p Resources
+          ul
+            li NCIX Database
+            li Statista 
+            li Microsoft Excel 
+          p Timeline: 2 weeks 
+          p Deliverables:
+          ul
+            li Presentation
+            li Report 
+            
+          div(class="content-toggle")  
+            h4 Reading Time:
+            button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
+            button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
+            
+    //- div(class="secondary-nav" id="second-sticky")
+    //-   ul
+    //-     li
+    //-       a(href="#business") Business Context 
+    //-     li
+    //-       a(href="#opportunity") Opportunity 
+    //-     li
+    //-       a(href="#process") Process 
+    //-     li
+    //-       a(href="#prototype") Prototype 
+    //-     li
+    //-       a(href="#reflection") Reflection             
+        
+    section(id="business" class="demo")
+      h3 Business Context 
+      div(class="content-container")
+        div(class="content-object" id="business-problem")
+          h4 Sales Channel 
+          p In North America, personal computers are largely sold through two key channels; big box electronics retailers and boutique system integrators (SI). NCIX PC (and its parent company, NCIX) competed in both channels, having had both a general retail arm and boutique SI division. 
+          
+        
+    section(class="projects-filter")
+      h3 More Projects
+      div(class="button-container")
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter="all") All
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-ux") User Experience
+        button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-mark") Marketing
+        
+    section(class="projects")
+      div(class="mix cat-ux projects-container")
+        a(href="via.html" class="hvr-bob")
+          img(src="images/gallery/via.png" alt="")
+        h3 VIA Journey
+        p A digital solution designed to address VIA Rail's declining ridership, VIA Journey realigns VIA Rail's brand proposition through the concept that a journey is as valuable as the destination. 
+        
+      div(class="mix cat-mark projects-container")
+        a(href="#" class="hvr-bob")
+          img(src="images/gallery/intel-extreme-rig.png" alt="")
+        h3 Intel Extreme Rig Challenge 2017
+        p Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. 
+          
+      div(class="mix cat-ux projects-container")
+        a(href="#" class="hvr-bob")
+          img(src="images/gallery/toyota-guardian.png" alt="")
+        h3 Toyota Guardian
+        p A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.
+        p Mentored by Chelsea Garber from ★ Inamoto &amp; Co.
+        
+      div(class="mix cat-mark projects-container")
+        a(href="market_research.html" class="hvr-bob")
+          img(src="images/gallery/market-research.png" alt="")
+        h3 Market Research + Analysis
+        p A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.
+              
+    
+    //-FOOTER 
+    include components/footer.pug
+    
+  //-SCRIPTS
+  script(src="js/jquery-3.3.1.js")
+  script(src="js/mixitup.min.js")
+  script(src="js/jquery.background-video.js")
+  script(src="js/main.js")
+  script(src="js/mixit_trigger.js")

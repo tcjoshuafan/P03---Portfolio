@@ -207,7 +207,7 @@ p {
   text-shadow: 1px 0 blue;
   top: 0;
   color: $josh-color;
-  background:#f7f7f7;
+  background: #f7f7f7;
   overflow: hidden;
   clip: rect(0,900px,0,0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -286,6 +286,7 @@ p {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  padding-bottom: 0;
 }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
   box-shadow: 10px 14px 15px -4px rgba(0,0,0,0.53);
@@ -304,6 +305,64 @@ p {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.content-toggle{
+  flex-basis: 100%;
+  width: 100%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.content-toggle h3{
+  font-size: 18px;
+}
+.content-toggle button{
+  margin-top: 1rem;
+}
+
 .projects {
   display: flex;
   flex-direction: row;
@@ -383,6 +442,14 @@ p {
   font-size: 32px;
 }
 
+
+.content-object h4{
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-position: below;
+  margin-bottom: 1rem;
+}
+
 .content-object p{
   font-size: 16px;
   margin-top: 1rem;
@@ -405,6 +472,111 @@ p {
   flex-basis: 30%;
 }
 
+#business-problem{
+  flex-basis: 100%;
+}
+
+#business-problem img{
+  max-width: 100%;
+  height: auto;
+}
+#market-matrix{
+  flex-basis: 50%;
+  margin-top: 3rem;
+}
+
+#market-matrix img{
+  max-width:100%;
+  height: auto;
+}
+
+#market-text{
+  flex-basis: 40%;
+  margin-top: 3rem;
+}
+
+#market-matrix p{
+}
+
+#insight-text{
+  margin-top: 3rem;
+  flex-basis: 100%;
+}
+
+#insight-text ol{
+  padding-left: 3rem;
+}
+
+#opportunity{
+  flex-basis: 100%;
+}
+
+#opportunity img{
+  max-width: 100%;
+  height: auto;
+}
+
+#customer-segment{
+  flex-basis: 100%;
+  margin-top: 3rem;
+}
+
+#customer-text{
+  flex-basis: 100%;
+}
+
+#persona{
+  flex-basis: 100%;
+  margin-top: 3rem;
+}
+
+#valueprop{
+  flex-basis: 100%;
+  margin-top: 3rem;
+}
+
+#valueprop img{
+  max-width: 100%;
+  height: auto;
+}
+#process-framework{
+  margin-top: 3rem;
+  flex-basis: 100%;
+}
+
+#framework{
+  flex-basis: 100%;
+}
+
+
+.videoWrapper {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.videoWrapper iframe,
+.videoWrapper object,
+.videoWrapper embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.dual-image{
+  margin-top: 3rem;
+  flex-basis: 50%;
+}
+
+.dual-image img{
+  max-width: 100%;
+  height: auto;
+}
+
 .footer{
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
@@ -416,6 +588,11 @@ p {
 .footer p{
   font-size: 12px;
   margin-top: 1rem;
+}
+
+#impact{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -455,30 +632,22 @@ p {
 
 .demo{
   margin-top: 3rem;
-  text-align: center;
-  height: 500px;
+  text-align: left;
   width: 100%;
+}
+
+
+.demo h3{
+  font-size: 32px;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .sticky + .demo{
   margin-top: 10rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//SECONDARY-NAV END
 
 
 @media (max-width:2100px) {
@@ -552,8 +721,10 @@ p {
     display: block;
     position: absolute;
     top: 5rem;
-    width: 100%;
+    width: 80%;
     height: fit-content;
+    background-color: #f7f7f7;
+    border-bottom: 1px black solid;
   }
 
   .navbar-links li {
@@ -572,6 +743,14 @@ p {
     margin-right: 0;
   }
 }
+
+@media (max-width: 750px){
+  .content-container{
+    margin:2rem;
+    margin-top: 3rem;
+  }
+}
+
 @media (max-width: 600px) {
   .banner {
     height: 40vh;
@@ -581,5 +760,9 @@ p {
   .navbar,
   .navbar ul {
     flex-direction: column;
+  }
+  .content-container{
+    margin:0.5rem;
+    margin-top: 1rem;
   }
 }
