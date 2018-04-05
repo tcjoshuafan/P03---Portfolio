@@ -1,0 +1,250 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    link(rel="stylesheet" type="text/css" href="css/normalize.css")
+    link(rel="stylesheet" type="text/css" href="css/jquery.background-video.css")
+    link(rel="stylesheet" href="css/zoom.css")
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    title JF - Toyota Guardian 
+
+body
+  header
+    
+    //-NAVBAR
+    include components/nav.pug
+    
+    //-HERO 
+    section
+      div(class="videoWrapper")
+        iframe(src='https://player.vimeo.com/video/246351729?title=0&byline=0&portrait=0', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+  div(class="content-wrapper")
+    section(class="intro flex-content")
+      div(class="left")
+        h1  Toyota Guardian - Product Proposal
+        p As the world’s largest auto manufacturer by volume, Toyota Motor Corporation’s commitment to safety has led their vehicles to consistently topping industry-standard safety rankings for the last decade. This commitment is a strong influence on the Toyota Research Institute, which seeks to continuously iterate their artificial intelligence and robotics technology to enhance safety and accessibility in mobility.
+        p Due to the merits of our previous project VIA Journey, our team was generously given the opportunity to work with Chelsea Garber from Inamoto &amp; Co on a real client prompt from Toyota. With Chelsea as our mentor in addition to our amazing teachers (Russell Taylor &amp; Stevie Nguyen), we tackled the prompt: “how might we ease people into trusting self driving cars”?
+        p Toyota Guardian is a mobile application that looks out for drivers throughout their vehicle ownership experience, leveraging existing Toyota technologies (particularly in automation and predictive intelligence) to build a transparent and trusting relationship today that extends into the self-driving tomorrow.
+        p Role:  Lead Writer &amp; Business Analyst, UX &amp; Content Strategist, Technologist, External Relations
+        p Results
+        ul
+          li analyzed Toyota’s extensive business portfolio, identified key strategic business units that aligned with digital solution
+          li responsible for aligning specific aspect of business model with digital solution
+          li researched and proposed the speculative blockchain carsharing component of Toyota Guardian
+          li responsible for the feasibility of implemented technologies and relevance to user experience
+          li produced the majority of written content, including but not limited to product copy, presentation scripts, video voiceovers, and preliminary reports to teaching staff
+      div(class="right")
+        p Team:  Sarah Tong, Michelle Ng, Gabriel Yeung, Grant Zou
+        p Resources
+        ul
+          li Experience Design: A Framework of Integrating Brand
+          li Google Ventures Sprints
+          li MAYA Principle
+          li Speculative Design: Futures Diagram
+          li Toyota Rail Annual Reports
+        p Timeline: 4 weeks
+        p Deliverables:
+        ul
+          li Presentation
+          li Product Video 
+          li Speculaitive Product Video
+          li Live Presentation 
+          
+    //- div(class="content-toggle")  
+    //-   h2 Reading Time:
+    //-   button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
+    //-   button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
+      
+  //- nav(id="stickynav")
+  //-   ul
+  //-     li
+  //-       a(href="#business") Business Context 
+  //-     li
+  //-       a(href="#process") Process 
+  //-     li
+  //-       a(href="#prototype") Prototype
+  //-     li
+  //-       a(href="#reflection") Reflection 
+      
+  div(class="content-wrapper")
+    h2 Business Context       
+    section(id="business")
+      div(class="problem short flex-content")
+        div(class="full")
+          h3 Problem 
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cb3eec212d810a5cb5e7/1518586700314/Acrobat_2018-02-13_20-49-49.png?format=1500w"  data-action="zoom")
+            
+        div(class="full")
+          p Determining a relevant business problem for Toyota was the first obstacle we faced in this project. While many of our peers specifically selected clients with business problems, our assigned client was seeing success across its numerous business units. To further complicate things, the organization responsible for Toyota’s exploration into automation (Toyota Research Institute) was a non-commercial unit, with no immediate need for returns.
+          p To address this, I clarified the nature of our prompt and client with Chelsea and determined that parent Toyota Motor Corporation was the ultimate client of our project. Combined with research this resulted in three findings:
+          ol
+            li While the non-commercial Toyota Research Institute is the organization behind Toyota’s push for autonomous cars, our primary client Toyota Motor Corporation has the same responsibility as any other business to perform for its shareholders
+            li Despite maintaining nearly double the sales volume of its competitors, Toyota’s growth has stagnated in the last four years, and competitors are beginning to close the sales gap
+            li Toyota’s investment in the future has a long-term pay off, and until their unique approach to autonomous vehicles hit the market in 2021, Toyota expects no significant change in their financial condition
+            
+      div(class="problem long flex-content")
+        div(class="full")
+          h3 Problem 
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cb3eec212d810a5cb5e7/1518586700314/Acrobat_2018-02-13_20-49-49.png?format=1500w"  data-action="zoom")
+            
+        div(class="full")
+          p Determining a relevant business problem for Toyota was the first obstacle we faced in this project. While many of our peers specifically selected clients with business problems, our assigned client was seeing success across its numerous business units. To further complicate things, the organization responsible for Toyota’s exploration into automation (Toyota Research Institute) was a non-commercial unit, with no immediate need for returns.
+          p To address this, I clarified the nature of our prompt and client with Chelsea and determined that parent Toyota Motor Corporation was the ultimate client of our project. Combined with research this resulted in three findings:
+          ol
+            li While the non-commercial Toyota Research Institute is the organization behind Toyota’s push for autonomous cars, our primary client Toyota Motor Corporation has the same responsibility as any other business to perform for its shareholders
+            li Despite maintaining nearly double the sales volume of its competitors, Toyota’s growth has stagnated in the last four years, and competitors are beginning to close the sales gap
+            li Toyota’s investment in the future has a long-term pay off, and until their unique approach to autonomous vehicles hit the market in 2021, Toyota expects no significant change in their financial condition
+
+    
+      div(class="brand short flex-content")
+        div(class="full")
+          h3 Design Opportunity 
+          p With fully autonomous vehicles still under development and too far off to demonstrate a clear value proposition or user base, we reframed our original prompt with our project goals in mind:
+          
+          p 
+            em Original: How might we ease people into trusting self-driving cars?
+          p 
+            strong Reframe: How might we leverage Toyota’s existing product strategy to demonstrate the value of future technologies, today? 
+        div(class="full")
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83ccee8165f5c1813879d0/1518587126933/toyota_futures.jpg?format=1000w" data-action="zoom")
+            
+          p This prompt resonated with Raymond Lowey’s Most Advanced Yet Acceptable Principle, and by overlaying Toyota’s development trajectory with Anthony Dunne and Fiona Raby’s Futures Diagram we mapped out a potential timeline for autonomous rollout, with our project narrowing in on the ‘probable’ outcome space.
+          
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cd8b4192025a996503c0/1518587288359/business.png?format=1000w" data-action="zoom")
+          
+          p This concept of progressive iteration draws from one of Toyota’s core principles. With Kaizen, or continuous improvement we saw an opportunity to first develop and improve Toyota’s current product value proposition, building trust and transparency with Toyota’s existing autonomous technology. This would provide an immediate and tangible preview of Toyota’s future technologies, extending their value proposition as autonomous technology continues to be released.
+          
+          p Toyota Guardian unifies both the business problem and design opportunity by: 
+          ol 
+            li More effectively using the existing safety technologies found in Toyota’s current products to demonstrate immediate benefits of automation and predictive intelligence
+            li Increase the value proposition found in Toyota’s current product strategy, in order to boost stagnating sales
+            li Create a direct-to-consumer channel for Toyota to deploy future technologies; as Toyota learns, Toyota Guardian can be updated for the owner’s benefit
+          p Toyota Guardian gives owners today a reason to value autonomous technology, by providing tangible benefits.  This builds trust in Toyota’s brand, and ultimately building a customer base that will remain receptive to any future products/technology that Toyota releases.
+          p Thus, achieving our goal of making a measurable impact to Toyota today while easing people to trust in Toyota’s technology for the future.
+          
+    h2 Process       
+    section(id="process")
+      div(class="persona flex-content")
+        div(class="full")
+          h3 Customer Segment &amp; Persona 
+          p While our app is intended for all owners, I made the decision for our team to focus on leaseholders due to the nature of leasing.
+
+          p Representing over 30% of new car purchases, leaseholders have guaranteed return visits throughout the different stages of their ownership, providing multiple touchpoints to ensure that both previous and new customers are included.
+          
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a998bb0e2c483a9c3827e79/5a998bb08165f591f752eaec/1520012213314/2018-03-02_09-35-29.png?format=1500w" data-action="zoom")
+            
+          p The leaseholder customer cycle is much more predictable within a timeframe, and by easing leaseholders into trusting the credibility of Toyota’s technology today, they become a receptive audience more likely to purchase a semi-autonomous vehicle at the end of their lease in a few years time, when Toyota’s technology goes to market.
+          
+          p Our persona is an adapter, a younger individual considering the lower cost of leasing a vehicle in order to help them manage their daily routine. They may be unaware of the extent technology has developed since they last owned a vehicle, or how this technology could benefit them.
+          
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a998beaf9619a6f89ba87d0/1520012672858/Acrobat_2018-03-02_09-37-45.png?format=1500w" data-action="zoom")
+            
+          p As we considered how our persona would influence our customer journey framework, we knew that the journey would take place over multiple years. We took this into account in our journey framework, identifying two key stages separated by a significant period of time.
+          
+      div(class="journey short flex-content")
+        div(class="full")
+          h3 Customer Journey Framework
+          p By constructing a user journey framework that leverages Maslow's Hierarchy of Needs, we intended to present VIA Rail's value proposition by aligning tangible, intangible, and aspirational values alongside Maslow's needs as they progress through our journey framework. 
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a99a165f9619a18f7dc5c0c/5a99a17824a694748e93a025/1520017790549/Acrobat_2018-03-02_11-09-00.png?format=1500w" data-action="zoom")
+          
+      div(class="valueprop short flex-content")
+        div(class="full")
+          h3 Value Proposition &amp; Cognitive Overload 
+          p Three missed opportunities were identified:
+          ol
+            li New vehicle owners would often overlook autonomous features that exist in their current vehicles; a combined result of dealerships and Toyota itself not guiding and educating new owners through the onboarding process
+            li Even if new owners were aware of these autonomous features, there is a disconnect between how Toyota’s current technology could support driver decisions
+            li This disconnect leads to a difficulty in understanding why any of this technology matters, and how it would support drivers over the course of their ownership
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a99a1a4c8302546bbe4a164/1520017837032/Acrobat_2018-03-02_11-10-20.png?format=1500w" data-action="zoom")
+          
+          
+      div(class="framework short flex-content")
+        div(class="full")
+          h3 Design Driven 
+          p With the “Guardian” Concept, we wanted to reinforce safety in order to build trust in future technology. The Guardian name comes from one of Toyota’s early concepts, and connotes protection and guidance .
+          p With humanizing data, we converted data into digestible information in the context of driving tasks using easy to understand language.
+          p Finally, we believe an app is the best medium to harness the potential of providing immediate notifications as needed prior to driving, through personal on-the-go access.
+          
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a99a1d7c8302546bbe4b39b/1520017883377/?format=1500w" data-action="zoom")
+            
+        div(class="full")
+          h3 Proposed Solution 
+          p Toyota Guardian seeks to address these missed opportunities by making Toyota’s technology meaningful, through providing driver insights, digestible vehicle diagnostics, and automated routines to help drivers make better decisions and focus on simply driving.
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a99a1fd71c10bf0158486b9/1520017927753/Acrobat_2018-03-02_11-11-50.png?format=1500w" data-action="zoom")
+          
+    h2 Prototype       
+    section(id="process")
+      div(class="toyota prototype flex-content")
+        div(class="left")
+          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a856f1ce2c4835ce8f659ed/1518694177049/4+copy-100.jpg?format=500w" data-action="zoom")
+        div(class="right")
+          h3 Onboarding 
+          p Upon opening the app, owners are presented with two call-to-actions, with a conversational introduction to the value proposition Toyota Guardian is offering in order to motivate commitment.
+      
+          
+    h2 Reflection       
+    section(id="reflection")
+      div(class="reflection flex-content")
+        div(class="full")
+          h3 The Big Design Pivot  
+          p For the first two weeks of this four-week project, Toyota Guardian was originally intended to be a in-dealership sales tool. Our early sprints and research led us to believe that the best way to bolster Toyota’s sales was to intervene at the “see-feel-touch” stage of the sales process, and that really highlighting the safety benefits of the technology was enough to differentiate Toyota’s products as well as getting users to trust in Toyota’s technology. We were so confident in our direction that we had completed scripts, prototypes, and even discussing ideas for product videos by the middle of the second week.
+          p It was in the third week where Chelsea (kindly) challenged our assumptions, forcing us to reconsider sales associates as a conduit for trust. At the same time, we had managed to acquire an opportunity to interview one of the leading Toyota dealerships in BC.
+          p Brad Hansen, the General Manager taught us so much! In that one-hour interview we gained access to a behind-the-scenes look of busy dealership, learning many of the nuances associated with auto sales. Many of our assumptions regarding the usefulness of a digital sales tool were refuted, and we had to revaluate our approach from near-scratch. Needless to say, the remaining two weeks went fast.
+          p In the end, this pivot pushed us to design a much more thoughtful user experience; one that was impactful to the user and the business. We had to quickly reject ideas we were married to, conduct more sprints, rapidly prototype new ideas, and conduct feasibility studies all within a reduced time span.
+      div(class="full")
+        h3 Reflection  
+        p Coming from our VIA Journey project, Toyota Guardian was a project at an entirely different scale. I was responsible for researching and analyzing the multi-national conglomerate that is the Toyota Motor Company, sifting through the different organizational priorities of various divisions and related organizations. The constraint we set of “making a measurable impact to Toyota today” meant I needed to find a way to align organizational objectives with user experience principles. I was incredibly happy when our teaching team and Chelsea found the decision to utilize the leaseholder business model intelligent; I had spent a significant amount of time and energy persuading my team that this differentiation mattered.
+        p One of the unexpected challenges I faced was with technological feasibility; as a tech hobbyist and mild car enthusiast, the underlying technology behind Toyota Guardian and the autonomous technology we were tapping into made sense to me. However, it took time to convince my team that it wasn’t just wizardry, but wireless ad-hoc networking and a mixture of local and cloud processing that would provide the development stack behind our project.
+        p In hindsight, the biggest regret I have was not defending one of my early ideas enough. I had this wild idea involving Toyota’s Kirobo Mini robot, their personal mobility division, cycling infrastructure and the Winter Olympics 2018. With our tight timeline however, I believe it was the right decision to scrap that idea (due to the ideation time needed and risk involved) and in order for us to move on. 
+
+
+
+  section(class="projects-filter")
+    h3 More Projects
+    div(class="button-container")
+      button(class="filter-button hvr-underline-from-left" type="button" data-filter="all") All
+      button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-ux") User Experience
+      button(class="filter-button hvr-underline-from-left" type="button" data-filter=".cat-mark") Marketing
+      
+  section(class="projects")
+    div(class="mix cat-ux projects-container")
+      a(href="via.html" class="hvr-bob")
+        img(src="images/gallery/via.png" alt="")
+      h3 VIA Journey
+      p A digital solution designed to address VIA Rail's declining ridership, VIA Journey realigns VIA Rail's brand proposition through the concept that a journey is as valuable as the destination. 
+      
+    div(class="mix cat-mark projects-container")
+      a(href="#" class="hvr-bob")
+        img(src="images/gallery/intel-extreme-rig.png" alt="")
+      h3 Intel Extreme Rig Challenge 2017
+      p Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. 
+        
+    div(class="mix cat-ux projects-container")
+      a(href="toyota.html" class="hvr-bob")
+        img(src="images/gallery/toyota-guardian.png" alt="")
+      h3 Toyota Guardian
+      p A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.
+      p Mentored by Chelsea Garber from ★ Inamoto &amp; Co.
+      
+    div(class="mix cat-mark projects-container")
+      a(href="market_research.html" class="hvr-bob")
+        img(src="images/gallery/market-research.png" alt="")
+      h3 Market Research + Analysis
+      p A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.
+              
+    
+    //-FOOTER 
+    include components/footer.pug
+    
+  //-SCRIPTS
+  script(src="js/jquery-3.3.1.js")
+  script(src="js/mixitup.min.js")
+  script(src="js/jquery.background-video.js")
+  script(src="js/main.js")
+  script(src="js/mixit_trigger.js")
+  script(src="js/transition.js")
+  script(src="js/zoom.js")

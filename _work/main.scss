@@ -7,7 +7,7 @@ $josh-color: #295ca4;
 }
 
 body {
-  font-family: Poppins, Roboto, sans-serif;
+  font-family: Lato, Roboto, sans-serif;
   background-color: white;
   border: 1rem solid #c1dbff;
 }
@@ -455,10 +455,11 @@ body.long div.short {
 }
 
 .content-wrapper h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 2rem;
   text-decoration: underline;
 }
+
 
 #stickynav {
   margin-top: 3rem;
@@ -491,13 +492,20 @@ body.long div.short {
 .sticky{
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 
-.content-wrapper p {
-  font-size: 1rem;
+.content-wrapper p, ol{
+  font-size: 1.25rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
+
+.content-wrapper p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 
 .flex-content {
   display: flex;
@@ -529,6 +537,22 @@ body.long div.short {
 
 .intro p {
   margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.problem ol{
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.brand ol{
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.brand li{
+  padding-top: 1rem;
 }
 
 .intro .left {
@@ -553,6 +577,16 @@ body.long div.short {
 .full p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.full ol{
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.full img{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .problem .right {
@@ -602,6 +636,25 @@ body.long div.short {
 .framework .right img {
   margin-left: 1.5rem;
 }
+
+
+.toyota .left{
+  flex-basis: 60%;
+}
+
+.toyota .right{
+  align-self: center;
+}
+
+.toyota h3{
+  margin-left: 2rem;
+}
+
+.toyota p{
+  margin-left: 2rem;
+}
+
+
 
 .videoWrapper {
   position: relative;
@@ -653,6 +706,12 @@ body.long div.short {
 
   .projects-container:nth-child(even) {
     margin-right: 5%;
+  }
+}
+
+@media (max-width: 1600px){
+  .content-wrapper{
+    margin: 0 5%;
   }
 }
 @media (max-width: 1000px) {
@@ -711,6 +770,32 @@ body.long div.short {
   .projects-container:nth-child(even) {
     margin-right: 0;
   }
+
+  .intro.flex-content{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .intro .left{
+    flex-basis: 100%;
+
+  }
+
+  .intro .right{
+    margin-top: 2rem;
+    flex-basis: 100%;
+  }
+
+  .content-wrapper p{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .intro p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 @media (max-width: 600px) {
   .banner {
@@ -719,6 +804,16 @@ body.long div.short {
 
   .flex-content {
     flex-wrap: wrap;
+  }
+
+  .content-wrapper p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .intro p {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 350px) {

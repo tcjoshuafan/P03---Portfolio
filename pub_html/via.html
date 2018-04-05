@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.background-video.css">
+    <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>JF - VIA Journey</title>
   </head>
@@ -15,15 +16,14 @@
   <header>
     <nav class="navbar"><a href="index.html" id="logo">joshua fan.</a><a class="toggle-button"><img class="menu" src="images/icons/menu.png"></a>
       <ul class="navbar-links">
-        <li><a class="hvr-underline-from-left " href="#">About</a></li>
         <li> <a class="hvr-underline-from-left " href="https://www.dropbox.com/s/aa68u3q7uf61x5o/josh_resume_02.pdf?dl=0">Resume</a></li>
         <li><a class="hvr-underline-from-left " href="https://www.linkedin.com/in/tjfan/">LinkedIn</a></li>
       </ul>
     </nav>
-    <section class="banner jquery-background-video-wrapper" id="via_hero">
-      <video class="bg-video jquery-background-video" loop autoplay>
-        <source src="videos/via_hero.webm">
-      </video>
+    <section>
+      <div class="videoWrapper">
+        <iframe src="https://player.vimeo.com/video/242132143?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
     </section>
   </header>
   <div class="content-wrapper">
@@ -66,33 +66,25 @@
       <button class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long">Extended Read</button>
     </div>
   </div>
-  <nav id="stickynav">
-    <ul>
-      <li><a href="#business">Business Context </a></li>
-      <li><a href="#process">Process </a></li>
-      <li><a href="#prototype">Prototype</a></li>
-      <li><a href="#reflection">Reflection </a></li>
-    </ul>
-  </nav>
   <div class="content-wrapper">
     <h2>Business Context       </h2>
     <section id="business">
       <div class="problem short flex-content">
         <div class="full">
-          <h3>Problem </h3><img src="images/via_journey/business_problem.png">
-          <p>Lorem ipsum dolor amet lyft humblebrag vegan fingerstache cornhole biodiesel. Chartreuse knausgaard wolf unicorn mumblecore. </p>
+          <h3>Problem </h3><img src="images/via_journey/business_problem.png" data-action="zoom">
+          <p>While the Canadian tourism industry has been experiencing a growth in demand, VIA Rail is struggling and has lost $8 million in tourism. </p>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a8292fd8165f52c4081a793/1518507941259/Acrobat_2018-01-24_23-56-28.png?format=1500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a8292fd8165f52c4081a793/1518507941259/Acrobat_2018-01-24_23-56-28.png?format=1500w" data-action="zoom"></div>
         <div class="right">
-          <p>Lorem ipsum dolor amet lyft humblebrag vegan fingerstache cornhole biodiesel. Chartreuse knausgaard wolf unicorn mumblecore. </p>
+          <p>Our initial assumptions led us to incorrectly believe that VIA Rail was unappealing due to higher prices, longer travel times, and cramped spaces. It took extensive user research to correct this assumption. </p>
         </div>
       </div>
       <div class="problem long flex-content">
         <div class="full">
-          <h3>Problem </h3><img src="images/via_journey/business_problem.png">
+          <h3>Problem </h3><img src="images/via_journey/business_problem.png" data-action="zoom">
           <p>In the last two years, the Canadian tourism industry has seen a surge in demand as an increasing number of Canadians choose to vacation domestically. This growth in the transportation tourism industry has largely been driven by passenger air and rail services, with rail competitors such as Rocky Mountaineer seeing double-digit growth. In spite of this, VIA Rail is struggling and has seen its tourism trains losing $8 million in 2016 alone.</p>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a8292fd8165f52c4081a793/1518507941259/Acrobat_2018-01-24_23-56-28.png?format=1500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a8292fd8165f52c4081a793/1518507941259/Acrobat_2018-01-24_23-56-28.png?format=1500w" data-action="zoom"></div>
         <div class="right">
           <p>Preliminary secondary research led us to our initial assumption; VIA Rail was an unappealing option for tourism due to painpoints surrounding higher upfront costs of travel, unpredictable and extended delays, and cramped living and leisure spaces. Our early brand positioning matrices seemed to verify this assumption, with VIA Rail being plotted against competitors across the tourism transportation industry. However, I decided to leverage VIA Rail’s recent Canada 150 campaign and brought in a number of our peers who had experienced VIA Rail firsthand.</p>
         </div>
@@ -101,9 +93,15 @@
         <div class="full">
           <h3>Insights: User &amp; Brand Relationship </h3>
           <p>These user interviews helped place our secondary research in context, and revealed a number of insights that corrected our assumptions:</p>
+          <ol>
+            <li>Airlines aren't a direct competitor of VIA Rail, as VIA Rail offers more than just transportation </li>
+            <li>VIA Rail's higher prices can be broken down as a hotel room, dining, and transportation. </li>
+            <li>Previous painpoints we assumed existed were actually reported as insignificant</li>
+            <li>VIA Rail's current website actually fails to distinguish its tourism products from its commuter products</li>
+          </ol>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a37ee2c483e34e33a28b/1518504165020/Acrobat_2018-01-25_01-03-59.png?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a3aa652deaeb807d4a2e/1518504165022/Acrobat_2018-01-25_01-30-05.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a37ee2c483e34e33a28b/1518504165020/Acrobat_2018-01-25_01-03-59.png?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a3aa652deaeb807d4a2e/1518504165022/Acrobat_2018-01-25_01-30-05.png?format=2500w" data-action="zoom"></div>
       </div>
       <div class="brand long flex-content">
         <div class="full">
@@ -116,12 +114,12 @@
             <li>VIA Rail’s existing website does little to differentiate its tourism products from its more mundane commuter services; the value proposition was unclear required significant cognitive overhead to explicate</li>
           </ol>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a37ee2c483e34e33a28b/1518504165020/Acrobat_2018-01-25_01-03-59.png?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a3aa652deaeb807d4a2e/1518504165022/Acrobat_2018-01-25_01-30-05.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a37ee2c483e34e33a28b/1518504165020/Acrobat_2018-01-25_01-03-59.png?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a3aa652deaeb807d4a2e/1518504165022/Acrobat_2018-01-25_01-30-05.png?format=2500w" data-action="zoom"></div>
       </div>
       <div class="opportunity flex-content">
         <div class="full">
-          <h3>Opportunity</h3><img src="images/via_journey/opportunity.png">
+          <h3>Opportunity</h3><img src="images/via_journey/opportunity.png" data-action="zoom">
           <p>With these insights, we saw an opportunity for a design intervention that would address VIA Rail’s business problem. VIA Rail’s current website is ineffective at enticing consumers, and potential passengers weren’t discovering the value of their excellent onboard experience.</p>
           <p>With VIA Rail’s Destination 2025 vision, VIA Rail identified four key values to guide their organizational strategy. With Connectivity, VIA Rail seeks to “…create innovative solutions and ideas to connect our passengers, employees, and assets”. We’ve chosen to push this definition further, utilizing Connectivity as the journey being as valuable as the destination as an opportunity to realign their value proposition such that VIA Rail would be considered a desirable option for tourism.</p>
         </div>
@@ -133,8 +131,8 @@
         <div class="full">
           <h3>Customer Segment &amp; Persona </h3>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a8295c49140b775e9bbbdd4/5a8295c4f9619af3c61fd5a4/1518507941261/Acrobat_2018-01-24_23-59-02.png?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a8295c49140b775e9bbbdd4/5a8295c48165f52c4081f83c/1518507941264/Acrobat_2018-01-25_01-08-56.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a8295c49140b775e9bbbdd4/5a8295c4f9619af3c61fd5a4/1518507941261/Acrobat_2018-01-24_23-59-02.png?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a8295c49140b775e9bbbdd4/5a8295c48165f52c4081f83c/1518507941264/Acrobat_2018-01-25_01-08-56.png?format=2500w" data-action="zoom"></div>
         <div class="full">
           <p>Our previous research and user interviews informed our decision to focus on first-time customers as our target audience. Our proposed VIA Journey would target adventurous individuals considering travel options through online research, who may know of VIA Rail only as a commuter train service. These individuals would be fairly flexible with their travel plans, and be open to sharing new experiences with strangers.</p>
         </div>
@@ -143,18 +141,18 @@
         <div class="full">
           <h3>Customer Journey Framework</h3>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a11c8165f5523ae7a11c/1518504165015/Acrobat_2018-01-24_23-59-18.png?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a211652deaeb807d1a5a/1518504165018/Acrobat_2018-01-25_01-22-54.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a11c8165f5523ae7a11c/1518504165015/Acrobat_2018-01-24_23-59-18.png?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a211652deaeb807d1a5a/1518504165018/Acrobat_2018-01-25_01-22-54.png?format=2500w" data-action="zoom"></div>
         <div class="full">
-          <p>Lorem ipsum dolor amet lyft humblebrag vegan fingerstache cornhole biodiesel. Chartreuse knausgaard wolf unicorn mumblecore. </p>
+          <p>By constructing a user journey framework that leverages Maslow's Hierarchy of Needs, we intended to present VIA Rail's value proposition by aligning tangible, intangible, and aspirational values alongside Maslow's needs as they progress through our journey framework. </p>
         </div>
       </div>
       <div class="journey long flex-content">
         <div class="full">
           <h3>Customer Journey Framework</h3>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a11c8165f5523ae7a11c/1518504165015/Acrobat_2018-01-24_23-59-18.png?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a211652deaeb807d1a5a/1518504165018/Acrobat_2018-01-25_01-22-54.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a11c8165f5523ae7a11c/1518504165015/Acrobat_2018-01-24_23-59-18.png?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a11bc83025d0fb042596/5a69a211652deaeb807d1a5a/1518504165018/Acrobat_2018-01-25_01-22-54.png?format=2500w" data-action="zoom"></div>
         <div class="full">
           <p>With our persona we constructed a user journey framework, and we recognized that VIA Rail was ineffective in converting consumers due to a misalignment, or gap, between the intended and perceived value proposition at the early entice stage. The previously mentioned painpoints around information being hidden in download-only PDFs, lack of distinction from commuter rail, and difficult to digest information meant that consumers never made it past the initial exploration of the site. This meant consumers weren’t buying, leading to a lack of ridership for VIA Rail.</p>
           <p>So we decided to intervene at the entice stage, breaking it down and drawing from Maslow's Hierarchy of Needs. We recognized that when basic needs are met, people are motivated to achieve higher level goals. Our second insight was to organize our value proposition so to present tangible, intangible, and aspirational values in alignment with Maslow's as they progress through the entice phase.</p>
@@ -162,13 +160,13 @@
       </div>
       <div class="valueprop short flex-content">
         <div class="full">
-          <h3>Value Proposition</h3><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a69a48f53450ac4bc581ad3/1518504165024/Acrobat_2018-01-24_23-59-35.png?format=2500w">
-          <p>Lorem ipsum dolor amet lyft humblebrag vegan fingerstache cornhole biodiesel. Chartreuse knausgaard wolf unicorn mumblecore. </p>
+          <h3>Value Proposition</h3><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a69a48f53450ac4bc581ad3/1518504165024/Acrobat_2018-01-24_23-59-35.png?format=2500w" data-action="zoom">
+          <p>VIA Journey presents each distinct tier of value as a promise from VIA Rail, realigning their value proposition in order to be considered as a desirable tourism option. </p>
         </div>
       </div>
       <div class="valueprop long flex-content">
         <div class="full">
-          <h3>Value Proposition</h3><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a69a48f53450ac4bc581ad3/1518504165024/Acrobat_2018-01-24_23-59-35.png?format=2500w">
+          <h3>Value Proposition</h3><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a69a48f53450ac4bc581ad3/1518504165024/Acrobat_2018-01-24_23-59-35.png?format=2500w" data-action="zoom">
           <p>While we understand that customers may not recognize each distinct tier of value, we wanted to increase the intended value proposition by highlighting the tangible, intangible, and aspirational values being promised. Our digital solution seeks to close this value gap, realigning their value proposition such that VIA Rail will be considered a desirable option for tourism.</p>
         </div>
       </div>
@@ -176,18 +174,18 @@
         <div class="full">
           <h3>Process Framework</h3>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0c553450ac4bc59743f/1518504165029/VIA-04.jpg?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0bc085229668127f744/1518504165026/POWERPNT_2018-01-25_02-24-40.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0c553450ac4bc59743f/1518504165029/VIA-04.jpg?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0bc085229668127f744/1518504165026/POWERPNT_2018-01-25_02-24-40.png?format=2500w" data-action="zoom"></div>
         <div class="full">
-          <p>Lorem ipsum dolor amet lyft humblebrag vegan fingerstache cornhole biodiesel. Chartreuse knausgaard wolf unicorn mumblecore. </p>
+          <p>Our previous work in studying AKQA's collaboration with Starbucks Reserve helped our team to create our own design framework, bridging both brand and UX studies. </p>
         </div>
       </div>
       <div class="framework long flex-content">
         <div class="full">
           <h3>Process Framework</h3>
         </div>
-        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0c553450ac4bc59743f/1518504165029/VIA-04.jpg?format=2500w"></div>
-        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0bc085229668127f744/1518504165026/POWERPNT_2018-01-25_02-24-40.png?format=2500w"></div>
+        <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0c553450ac4bc59743f/1518504165029/VIA-04.jpg?format=2500w" data-action="zoom"></div>
+        <div class="right"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69b0bb652deaeb807ec19f/5a69b0bc085229668127f744/1518504165026/POWERPNT_2018-01-25_02-24-40.png?format=2500w" data-action="zoom"></div>
         <div class="full">
           <p>After completing our case study on AKQA's collaboration with Starbucks Reserve, our team felt that we needed to establish an underlying design framework in order to ensure we had a good understanding of both the brand and any possible design interventions. Our three key user experience principles derived from that case study (UX is Holistic, UX is Focused, UX adds Value) spawned a design framework that allowed us to transition between macro and micro thinking, while simultaneously challenging us to quality check our decisions. Alongside our modified version of AKQA's Project Development Cycles, these were robust mental models that guided our strategies. </p>
         </div>
@@ -278,7 +276,7 @@
       <h3>Intel Extreme Rig Challenge 2017</h3>
       <p>Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. </p>
     </div>
-    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="#"><img src="images/gallery/toyota-guardian.png" alt=""></a>
+    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="toyota.html"><img src="images/gallery/toyota-guardian.png" alt=""></a>
       <h3>Toyota Guardian</h3>
       <p>A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.</p>
       <p>Mentored by Chelsea Garber from ★ Inamoto &amp; Co.</p>
@@ -297,4 +295,6 @@
   <script src="js/jquery.background-video.js"></script>
   <script src="js/main.js"></script>
   <script src="js/mixit_trigger.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/zoom.js"></script>
 </body>

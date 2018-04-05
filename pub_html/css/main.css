@@ -4,7 +4,7 @@
   outline: none; }
 
 body {
-  font-family: Poppins, Roboto, sans-serif;
+  font-family: Lato, Roboto, sans-serif;
   background-color: white;
   border: 1rem solid #c1dbff; }
 
@@ -175,59 +175,59 @@ body.long div.short {
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(47px, 9999px, 83px, 0); }
+    clip: rect(46px, 9999px, 9px, 0); }
   8.33333% {
-    clip: rect(98px, 9999px, 60px, 0); }
+    clip: rect(30px, 9999px, 80px, 0); }
   16.66667% {
-    clip: rect(13px, 9999px, 42px, 0); }
+    clip: rect(95px, 9999px, 56px, 0); }
   25% {
-    clip: rect(15px, 9999px, 93px, 0); }
+    clip: rect(34px, 9999px, 12px, 0); }
   33.33333% {
-    clip: rect(8px, 9999px, 10px, 0); }
+    clip: rect(39px, 9999px, 68px, 0); }
   41.66667% {
-    clip: rect(29px, 9999px, 58px, 0); }
+    clip: rect(55px, 9999px, 9px, 0); }
   50% {
-    clip: rect(85px, 9999px, 32px, 0); }
+    clip: rect(67px, 9999px, 79px, 0); }
   58.33333% {
-    clip: rect(79px, 9999px, 70px, 0); }
+    clip: rect(31px, 9999px, 17px, 0); }
   66.66667% {
-    clip: rect(92px, 9999px, 10px, 0); }
+    clip: rect(52px, 9999px, 65px, 0); }
   75% {
-    clip: rect(91px, 9999px, 53px, 0); }
+    clip: rect(42px, 9999px, 86px, 0); }
   83.33333% {
-    clip: rect(30px, 9999px, 56px, 0); }
+    clip: rect(45px, 9999px, 83px, 0); }
   91.66667% {
-    clip: rect(4px, 9999px, 14px, 0); }
+    clip: rect(25px, 9999px, 88px, 0); }
   100% {
-    clip: rect(16px, 9999px, 99px, 0); } }
+    clip: rect(26px, 9999px, 64px, 0); } }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(47px, 9999px, 83px, 0); }
+    clip: rect(46px, 9999px, 9px, 0); }
   8.33333% {
-    clip: rect(98px, 9999px, 60px, 0); }
+    clip: rect(30px, 9999px, 80px, 0); }
   16.66667% {
-    clip: rect(13px, 9999px, 42px, 0); }
+    clip: rect(95px, 9999px, 56px, 0); }
   25% {
-    clip: rect(15px, 9999px, 93px, 0); }
+    clip: rect(34px, 9999px, 12px, 0); }
   33.33333% {
-    clip: rect(8px, 9999px, 10px, 0); }
+    clip: rect(39px, 9999px, 68px, 0); }
   41.66667% {
-    clip: rect(29px, 9999px, 58px, 0); }
+    clip: rect(55px, 9999px, 9px, 0); }
   50% {
-    clip: rect(85px, 9999px, 32px, 0); }
+    clip: rect(67px, 9999px, 79px, 0); }
   58.33333% {
-    clip: rect(79px, 9999px, 70px, 0); }
+    clip: rect(31px, 9999px, 17px, 0); }
   66.66667% {
-    clip: rect(92px, 9999px, 10px, 0); }
+    clip: rect(52px, 9999px, 65px, 0); }
   75% {
-    clip: rect(91px, 9999px, 53px, 0); }
+    clip: rect(42px, 9999px, 86px, 0); }
   83.33333% {
-    clip: rect(30px, 9999px, 56px, 0); }
+    clip: rect(45px, 9999px, 83px, 0); }
   91.66667% {
-    clip: rect(4px, 9999px, 14px, 0); }
+    clip: rect(25px, 9999px, 88px, 0); }
   100% {
-    clip: rect(16px, 9999px, 99px, 0); } }
+    clip: rect(26px, 9999px, 64px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -243,59 +243,59 @@ body.long div.short {
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(54px, 9999px, 97px, 0); }
+    clip: rect(27px, 9999px, 84px, 0); }
   8.33333% {
-    clip: rect(98px, 9999px, 46px, 0); }
+    clip: rect(88px, 9999px, 56px, 0); }
   16.66667% {
-    clip: rect(85px, 9999px, 74px, 0); }
+    clip: rect(30px, 9999px, 52px, 0); }
   25% {
-    clip: rect(1px, 9999px, 64px, 0); }
+    clip: rect(88px, 9999px, 60px, 0); }
   33.33333% {
-    clip: rect(6px, 9999px, 42px, 0); }
+    clip: rect(66px, 9999px, 19px, 0); }
   41.66667% {
-    clip: rect(33px, 9999px, 97px, 0); }
+    clip: rect(91px, 9999px, 70px, 0); }
   50% {
-    clip: rect(16px, 9999px, 11px, 0); }
+    clip: rect(34px, 9999px, 61px, 0); }
   58.33333% {
-    clip: rect(4px, 9999px, 17px, 0); }
+    clip: rect(15px, 9999px, 8px, 0); }
   66.66667% {
-    clip: rect(43px, 9999px, 7px, 0); }
+    clip: rect(2px, 9999px, 61px, 0); }
   75% {
-    clip: rect(52px, 9999px, 36px, 0); }
+    clip: rect(20px, 9999px, 49px, 0); }
   83.33333% {
-    clip: rect(34px, 9999px, 86px, 0); }
+    clip: rect(70px, 9999px, 91px, 0); }
   91.66667% {
-    clip: rect(70px, 9999px, 36px, 0); }
+    clip: rect(47px, 9999px, 69px, 0); }
   100% {
-    clip: rect(24px, 9999px, 1px, 0); } }
+    clip: rect(71px, 9999px, 99px, 0); } }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(54px, 9999px, 97px, 0); }
+    clip: rect(27px, 9999px, 84px, 0); }
   8.33333% {
-    clip: rect(98px, 9999px, 46px, 0); }
+    clip: rect(88px, 9999px, 56px, 0); }
   16.66667% {
-    clip: rect(85px, 9999px, 74px, 0); }
+    clip: rect(30px, 9999px, 52px, 0); }
   25% {
-    clip: rect(1px, 9999px, 64px, 0); }
+    clip: rect(88px, 9999px, 60px, 0); }
   33.33333% {
-    clip: rect(6px, 9999px, 42px, 0); }
+    clip: rect(66px, 9999px, 19px, 0); }
   41.66667% {
-    clip: rect(33px, 9999px, 97px, 0); }
+    clip: rect(91px, 9999px, 70px, 0); }
   50% {
-    clip: rect(16px, 9999px, 11px, 0); }
+    clip: rect(34px, 9999px, 61px, 0); }
   58.33333% {
-    clip: rect(4px, 9999px, 17px, 0); }
+    clip: rect(15px, 9999px, 8px, 0); }
   66.66667% {
-    clip: rect(43px, 9999px, 7px, 0); }
+    clip: rect(2px, 9999px, 61px, 0); }
   75% {
-    clip: rect(52px, 9999px, 36px, 0); }
+    clip: rect(20px, 9999px, 49px, 0); }
   83.33333% {
-    clip: rect(34px, 9999px, 86px, 0); }
+    clip: rect(70px, 9999px, 91px, 0); }
   91.66667% {
-    clip: rect(70px, 9999px, 36px, 0); }
+    clip: rect(47px, 9999px, 69px, 0); }
   100% {
-    clip: rect(24px, 9999px, 1px, 0); } }
+    clip: rect(71px, 9999px, 99px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
@@ -544,7 +544,7 @@ body.long div.short {
   margin-top: 5rem; }
 
 .content-wrapper h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 2rem;
   text-decoration: underline; }
 
@@ -579,11 +579,16 @@ body.long div.short {
 
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%; }
+  top: 0; }
+
+.content-wrapper p, ol {
+  font-size: 1.25rem;
+  margin-left: 10rem;
+  margin-right: 10rem; }
 
 .content-wrapper p {
-  font-size: 1rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .flex-content {
   display: -webkit-box;
@@ -614,7 +619,20 @@ body.long div.short {
   padding-top: 1rem; }
 
 .intro p {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0; }
+
+.problem ol {
+  padding-top: 1rem;
+  padding-left: 2rem; }
+
+.brand ol {
+  padding-top: 1rem;
+  padding-left: 2rem; }
+
+.brand li {
+  padding-top: 1rem; }
 
 .intro .left {
   -ms-flex-preferred-size: 70%;
@@ -638,6 +656,14 @@ body.long div.short {
 .full p {
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+.full ol {
+  padding-top: 1rem;
+  padding-left: 2rem; }
+
+.full img {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .problem .right {
   -ms-flex-item-align: center;
@@ -681,6 +707,20 @@ body.long div.short {
 
 .framework .right img {
   margin-left: 1.5rem; }
+
+.toyota .left {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%; }
+
+.toyota .right {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.toyota h3 {
+  margin-left: 2rem; }
+
+.toyota p {
+  margin-left: 2rem; }
 
 .videoWrapper {
   position: relative;
@@ -730,6 +770,10 @@ body.long div.short {
   .projects-container:nth-child(even) {
     margin-right: 5%; } }
 
+@media (max-width: 1600px) {
+  .content-wrapper {
+    margin: 0 5%; } }
+
 @media (max-width: 1000px) {
   .banner {
     height: 60vh; }
@@ -768,6 +812,25 @@ body.long div.short {
   .projects-container:nth-child(odd) {
     margin-left: 0; }
   .projects-container:nth-child(even) {
+    margin-right: 0; }
+  .intro.flex-content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .intro .left {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .intro .right {
+    margin-top: 2rem;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .content-wrapper p {
+    margin-left: 3rem;
+    margin-right: 3rem; }
+  .intro p {
+    margin-left: 0;
     margin-right: 0; } }
 
 @media (max-width: 600px) {
@@ -775,7 +838,13 @@ body.long div.short {
     height: 40vh; }
   .flex-content {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .content-wrapper p {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .intro p {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (max-width: 350px) {
   .navbar,
