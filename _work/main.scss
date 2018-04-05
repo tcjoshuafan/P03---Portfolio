@@ -32,6 +32,14 @@ p {
   font-size: 24px;
 }
 
+body:not(.long) section.long {
+  display: none;
+}
+
+body.long section.short {
+ display: none;
+}
+
 .navbar,
 .navbar-links {
   background: transparent;

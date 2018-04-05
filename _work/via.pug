@@ -10,7 +10,7 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="css/main.css")
     title JF - VIA Journey
 
-body
+body(class="long")
   header
     
     //-NAVBAR
@@ -56,19 +56,7 @@ body
             h4 Reading Time:
             button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
             button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
-            
-    //- div(class="secondary-nav" id="second-sticky")
-    //-   ul
-    //-     li
-    //-       a(href="#business") Business Context 
-    //-     li
-    //-       a(href="#opportunity") Opportunity 
-    //-     li
-    //-       a(href="#process") Process 
-    //-     li
-    //-       a(href="#prototype") Prototype 
-    //-     li
-    //-       a(href="#reflection") Reflection             
+                       
         
     section(id="business" class="demo")
       h3 Business Context 
@@ -236,6 +224,79 @@ body
         h3 Market Research + Analysis
         p A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.
               
+
+  body(class="short")
+    header
+      
+      //-NAVBAR
+      include components/nav.pug
+      
+      //-HERO 
+      section(class="banner jquery-background-video-wrapper" id="via_hero")
+        video(class="bg-video jquery-background-video" loop autoplay)
+          source(src="videos/via_hero.webm")
+
+      section(class="content")
+        div(class="content-container")
+          
+          div(class="content-object" id="via-intro-text")
+            h2 VIA Journey - Product Proposal
+            p As Canada’s only provider of coast-to-coast passenger rail service, VIA Rail is Canada’s equivalent of a national passenger train. VIA Rail’s primary revenue stream comes from its local commuter services, with its highly rated long-distance tourism trains struggling in sales.  
+            p VIA Journey is our digital solution to VIA Rail’s declining ridership and brand misperception, inviting first-time potential passengers to reassess the value proposition VIA Rail offers. VIA Journey presents train travel as an alternative and enjoyable form of transportation tourism, aligning VIA Rail’s value proposition alongside consumers’ tangible, intangible, and aspirational values.
+            p Role:  Writer, Business Analyst, UX &amp; Content Strategist
+            p Results
+            ul
+              li identified and quantified VIA Rail's business problem through an analysis and consolidation of financial earnings reports and passenger statistics, placing their problem in economic context by researching other forms of tourism
+              li aligned business analysis with user experience principles, only targeting business problems addressable by design
+              li created initial set of wireframes that were eventually iterated to final product proposal
+              li produced/advised with significant amounts of written content, including but not limited to product copy, presentation scripts, video voiceovers, and preliminary reports to teaching staff
+            
+          div(class="content-object" id="via-intro-side")
+            p Team:  Sarah Tong, Michelle Ng, Gabriel Yeung, Grant Zou
+            p Resources
+            ul
+              li Brand Positioning Map (STP Marketing Process)
+              li Experience Design: A Framework of Integrating Brand
+              li Google Ventures Sprints
+              li Maslow's Hierarchy of Needs
+              li Statistics Canada
+              li VIA Rail Annual Reports
+            p Timeline: 5 weeks
+            p Deliverables:
+            ul
+              li Presentation
+              li Product Video 
+              
+            div(class="content-toggle")  
+              h4 Reading Time:
+              button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
+              button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
+                         
+          
+      section(id="business" class="demo")
+        h3 Business Context 
+        div(class="content-container")
+          div(class="content-object" id="business-problem")
+            h4 Problem 
+            img(src="images/via_journey/business_problem.png")
+            p SHORTER
+            
+          div(class="content-object" id="market-matrix")
+            img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a8292fd8165f52c4081a793/1518507941259/Acrobat_2018-01-24_23-56-28.png?format=1500w")
+              
+          div(class="content-object" id="market-text")
+            p SHORTER
+            
+          
+          div(class="content-object" id="insight-text")
+            h4 Insights: User &amp; Brand Relationship 
+            p These user interviews helped place our secondary research in context, and revealed a number of insights that corrected our assumptions:
+            ol
+              li SHORTER
+          div(class="content-object dual-image")
+            img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a37ee2c483e34e33a28b/1518504165020/Acrobat_2018-01-25_01-03-59.png?format=2500w")
+          div(class="content-object dual-image")
+            img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/5a69a3694192024367650cbb/5a69a3aa652deaeb807d4a2e/1518504165022/Acrobat_2018-01-25_01-30-05.png?format=2500w")
     
     //-FOOTER 
     include components/footer.pug
