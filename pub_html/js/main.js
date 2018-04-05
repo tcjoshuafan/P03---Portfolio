@@ -25,10 +25,10 @@ $(document).ready(function(){
 });
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction()
-};
+// // When the user scrolls the page, execute myFunction
+// window.onscroll = function() {
+//   myFunction()
+// };
 
 
 $('.content-toggle .filter-button').on('click', function (e) {
