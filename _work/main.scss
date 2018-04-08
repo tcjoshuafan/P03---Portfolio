@@ -535,6 +535,11 @@ body.long div.short {
   color: white;
 }
 
+.stickynav a:active, a:hover{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 .sticky{
   position: fixed;
   width: 100%;
