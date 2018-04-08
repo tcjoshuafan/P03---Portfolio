@@ -483,6 +483,7 @@ body.long div.short {
 }
 
 
+
 .section-heading{
   color: $josh-color;
   text-decoration: underline;
@@ -510,6 +511,7 @@ body.long div.short {
   margin-top: 1.15rem;
 }
 
+
 .stickynav ul {
   display: flex;
   justify-content: center;
@@ -533,16 +535,23 @@ body.long div.short {
 .stickynav a {
   text-decoration: none;
   color: white;
+  background-color: none;
 }
 
-.stickynav a:active, a:hover{
-  font-weight: 400;
-  text-decoration: underline;
+.stickynav a:active, .stickynav a:hover, .stickynav a:focus {
+  font-weight: 600;
+  background-color: white;
+  color: $josh-color;
+  padding: 0.5rem;
 }
 
 .activeNav{
-  font-weight: 400;
-  text-decoration: underline;
+  a {
+    font-weight: 600;
+    background-color: white;
+    color: $josh-color;
+    padding: 0.5rem;
+  }
 }
 
 .sticky{
@@ -762,6 +771,92 @@ body.long div.short {
   font-size: 0.8rem;
   margin-top: 1rem;
 }
+
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-links a{
+  font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+
+.footer-links a:active, .footer-links a:hover{
+  color: black;
+  text-decoration: underline;
+
+}
+
+.styleguide{
+  display: block;
+}
+
+
+.styleguide p{
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.styleguide code{
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: beige;
+  padding: 1rem 0.5rem;
+}
+
+.styleguide a{
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#style-nav-bar{
+  display: block;
+  width: 8%;
+  text-align: left;
+}
+
+#style-nav-bar a:hover, #style-nav-bar a:active, #style-nav-bar a:focus{
+  text-decoration: none;
+}
+
+#style-nav-bar li:hover{
+  text-decoration: none;
+}
+
+.bottom-fix{
+  margin-bottom: 2rem;
+}
+
+.left-fix h2{
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.left-fix h3{
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.list-fix ul{
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+.list-fix ol{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2rem;
+  margin-top: 2rem;
+
+}
+
 //SECONDARY-NAV END
 
 @media (max-width:2100px) {

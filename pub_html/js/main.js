@@ -52,4 +52,4 @@ $('.content-toggle .filter-button').on('click', function (e) {
 			});
 		});
 
-$(".stickynav").scrollspy({activeClass: '.activeNav'});
+$(".stickynav").scrollspy({activeClass: 'activeNav'});

@@ -1,0 +1,180 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href='https://fonts.googleapis.com/css?family=Poppins', rel='stylesheet')
+    link(rel="stylesheet" type="text/css" href="css/normalize.css")
+    link(rel="stylesheet" href="css/zoom.css")
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    title JF - VIA Journey
+
+body
+  header
+    
+    include components/nav.pug
+    
+    section(class="banner")
+      div(class="banner-text")
+        h1 IAT 339: Project 03
+        p Portfolio
+        div(class="glitch" id="glitch-ux" data-text!="Style&nbsp;Guide") Style&nbsp;Guide
+        
+  div(class="content-wrapper")
+    div(class="styleguide")
+      h2(class="section-heading") In-Text Link 
+      h3 CSS Selector: 
+      p .intext-link
+      
+      h3 Sample Code: 
+      code &lt;a class="intext-link" href='#'&gt; In-Text Link &lt;/a&gt;
+      
+      h3 Rendered Element:
+      a.intext-link(href='#')  In-Text Link
+      
+    div(class="styleguide")
+      h2(class="section-heading") Navigation Button 
+      h3 CSS Selector: 
+      p .hvr-underline-from-left
+      
+      h3 Sample Code: 
+      code &lt;a class="hvr-underline-from-left" href='#'&gt; Navigation Button &lt;/a&gt;
+      
+      h3 Rendered Element:
+      ul(class="navbar-links"  id="style-nav-bar")
+        li
+          a(href="#" class="hvr-underline-from-left ") About
+          
+    div(class="styleguide")
+      h2(class="section-heading") CTA Button 
+      h3 CSS Selector: 
+      p .hvr-underline-from-left
+      
+      h3 Sample Code: 
+      code &lt;button class="filter-button hvr-shutter-out-horizontal" type="button"&gt; CTA Button &lt;/a&gt;
+      
+      h3(class="bottom-fix") Rendered Element:
+      button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter="") CTA Button 
+      
+      
+    div(class="styleguide")
+      h2(class="section-heading") H1 Heading 
+      h3 CSS Selector: 
+      p h1
+      
+      h3 Sample Code: 
+      code &lt;h1&gt; Heading 1 &lt;/h1&gt;
+      
+      h3 Rendered Element:
+      h1 Heading 1
+      
+    div(class="styleguide")
+      h2(class="section-heading") H2 Heading 
+      h3 CSS Selector: 
+      p h2(class="section-heading")
+      
+      h3 Sample Code: 
+      code &lt;h2 class="section-heading"&gt; Heading 2 &lt;/h2&gt;
+      
+      h3 Rendered Element:
+      div(class="left-fix")
+        h2(class="section-heading") Heading 2
+    
+    
+    div(class="styleguide")
+      h2(class="section-heading") H3 Heading 
+      h3 CSS Selector: 
+      p h3
+      
+      h3 Sample Code: 
+      code &lt;h3&gt; Heading 3 &lt;/h2&gt;
+      
+      h3 Rendered Element:
+      div(class="left-fix")
+        h3 Heading 3
+        
+    div(class="styleguide")
+      h2(class="section-heading") Paragraphs
+      h3 CSS Selector: 
+      p p
+      
+      h3 Sample Code: 
+      code &lt;p&gt; Paragraph &lt;/p&gt;
+      
+      h3 Rendered Element:
+      p Paragraph
+      
+      
+    div(class="styleguide")
+      h2(class="section-heading") Unordered Lists
+      h3 CSS Selector: 
+      p ul
+      
+      h3 Sample Code: 
+      code &lt;ul&gt; &lt;li&gt; Item A &lt;/li&gt; &lt;li&gt; Item B &lt;/li&gt; &lt;li&gt; Item C &lt;/li&gt; &lt;/ul&gt; 
+
+      h3 Rendered Element:
+      div(class="list-fix")
+        ul
+          li Item A
+          li Item B
+          li Item C
+          
+    div(class="styleguide")
+      h2(class="section-heading") Ordered Lists
+      h3 CSS Selector: 
+      p ol
+      
+      h3 Sample Code: 
+      code &lt;ul&gt; &lt;li&gt; Item 1 &lt;/li&gt; &lt;li&gt; Item 2 &lt;/li&gt; &lt;li&gt; Item 3 &lt;/li&gt; &lt;/ul&gt; 
+
+      h3 Rendered Element:
+      div(class="list-fix")
+        ol
+          li Item 1
+          li Item 2
+          li Item 3
+          
+          
+    h2(class="section-heading") Main Navigation
+  include components/nav.pug
+        
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
