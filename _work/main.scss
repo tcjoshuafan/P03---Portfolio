@@ -494,7 +494,7 @@ body.long div.short {
 }
 
 
-#stickynav {
+.stickynav {
   margin-top: 3rem;
   width: 100%;
   height: 5rem;
@@ -510,7 +510,7 @@ body.long div.short {
   margin-top: 1.15rem;
 }
 
-#stickynav ul {
+.stickynav ul {
   display: flex;
   justify-content: center;
   height: auto;
@@ -520,25 +520,31 @@ body.long div.short {
 }
 
 
-#stickynav li:first-of-type {
+.stickynav li:first-of-type {
   margin-left: 0;
 }
 
-#stickynav li {
+.stickynav li {
   list-style: none;
   margin-left: 3rem;
 }
 
 
-#stickynav a {
+.stickynav a {
   text-decoration: none;
   color: white;
 }
 
 .sticky{
   position: fixed;
+  width: 100%;
   top: 0;
+  z-index: 100;
+  border-top: 0;
+  margin-top: 0;
 }
+
+
 
 .flex-content {
   display: flex;
@@ -793,11 +799,11 @@ body.long div.short {
 }
 
 @media (max-width: 1200px){
-  #stickynav{
+  .stickynav{
     height: 10rem;
   }
 
-  #stickynav ul{
+  .stickynav ul{
     margin-top: 2rem;
     align-items: flex-start;
   }
@@ -898,7 +904,7 @@ body.long div.short {
     margin-right:0;
   }
 
-  #stickynav li{
+  .stickynav li{
     margin-left: 1rem;
 
   }
