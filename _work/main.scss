@@ -7,29 +7,37 @@ $josh-color: #295ca4;
 }
 
 body {
-  font-family: Lato, Roboto, sans-serif;
-  background-color: white;
+  font-family: Poppins, Roboto, sans-serif;
+  background-color: #fafafa;
   border: 1rem solid #c1dbff;
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 2;
 }
 
 p {
-  font-size: 24px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+li{
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
 }
 
 body:not(.long) div.long {
@@ -153,12 +161,13 @@ body.long div.short {
 }
 
 .banner-text h1 {
-  font-size: 55px;
+  font-size: 4rem;
   margin: 0;
 }
 
 .banner-text p {
-  font-size: 32px;
+  font-size: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -170,7 +179,7 @@ body.long div.short {
 
 .glitch {
   color: $josh-color;
-  font-size: 85px;
+  font-size: 5.5rem;
   position: relative;
 }
 
@@ -193,7 +202,7 @@ body.long div.short {
   text-shadow: -1px 0 red;
   top: 0;
   color: $josh-color;
-  background: white;
+  background: #fafafa;
   overflow: hidden;
   clip: rect(0,900px,0,0);
   animation: noise-anim 2s infinite linear alternate-reverse;
@@ -214,7 +223,7 @@ body.long div.short {
   text-shadow: 1px 0 blue;
   top: 0;
   color: $josh-color;
-  background: white;
+  background: #fafafa;
   overflow: hidden;
   clip: rect(0,900px,0,0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -224,7 +233,8 @@ body.long div.short {
 .filter-button {
   background-color: transparent;
   border: none;
-  padding: 1rem;
+  padding: 0.75rem;
+  margin-right: 0.5rem;
 }
 //PROJECT CONTROLS
 
@@ -369,20 +379,10 @@ body.long div.short {
   transform: scaleX(1);
 }
 
-.content-toggle {
-  flex-basis: 100%;
-  width: 100%;
-  text-align: center;
-  margin-top: 5rem;
+.videoBanner{
+  margin: 2rem 15%;
 }
 
-.content-toggle h3 {
-  font-size: 18px;
-}
-
-.content-toggle button {
-  margin-top: 1rem;
-}
 
 .projects {
   display: flex;
@@ -432,12 +432,12 @@ body.long div.short {
 }
 
 .projects h3 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .projects p {
   margin-top: 1rem;
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 .content-wrapper {
@@ -451,49 +451,12 @@ body.long div.short {
 .content-wrapper h2 {
   font-size: 2rem;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .content-wrapper h3 {
   font-size: 1.75rem;
-  margin-bottom: 2rem;
-  text-decoration: underline;
+  font-style: italic;
 }
-
-
-#stickynav {
-  margin-top: 3rem;
-  width: 100%;
-  height: 4rem;
-  background-color: $josh-color;
-}
-
-#stickynav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-#stickynav li:first-of-type {
-  margin-left: 0;
-}
-
-#stickynav li {
-  list-style: none;
-  margin-left: 3rem;
-}
-
-#stickynav a {
-  text-decoration: none;
-  color: white;
-}
-
-.sticky{
-  position: fixed;
-  top: 0;
-}
-
 
 .content-wrapper p, ol{
   font-size: 1.25rem;
@@ -506,10 +469,76 @@ body.long div.short {
   margin-bottom: 2rem;
 }
 
+.content-wrapper li{
+  font-size: 1.25rem;
+}
+
+.content-wrapper a{
+  text-decoration: none;
+  color: black;
+}
+
+.content-wrapper a:hover{
+  text-decoration: underline;
+}
+
+
+.section-heading{
+  color: $josh-color;
+  text-decoration: underline;
+  margin-top: 10rem;
+}
+
+
+#stickynav {
+  margin-top: 3rem;
+  width: 100%;
+  height: 5rem;
+  background-color: $josh-color;
+  display: flex;
+  position: relative;
+}
+
+.content-toggle{
+  position: absolute;
+  right: 5%;
+  height: inherit;
+  margin-top: 1.15rem;
+}
+
+#stickynav ul {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  flex-basis: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+#stickynav li:first-of-type {
+  margin-left: 0;
+}
+
+#stickynav li {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+
+#stickynav a {
+  text-decoration: none;
+  color: white;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+}
 
 .flex-content {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .flex-content img {
@@ -527,7 +556,6 @@ body.long div.short {
 }
 
 .intro ul {
-  padding-top: 1rem;
   padding-left: 2rem;
 }
 
@@ -536,9 +564,10 @@ body.long div.short {
 }
 
 .intro p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .problem ol{
@@ -574,10 +603,6 @@ body.long div.short {
   flex-basis: 50%;
 }
 
-.full p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 .full ol{
   padding-top: 1rem;
@@ -591,10 +616,14 @@ body.long div.short {
 
 .problem .right {
   align-self: center;
+
 }
 
 .problem .right p {
-  margin-left: 1rem;
+  // margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 0;
+
 }
 
 .brand .left,
@@ -603,8 +632,21 @@ body.long div.short {
   flex-basis: 50%;
 }
 
+.brand p{
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.brand ol{
+  margin-bottom: 2rem;
+}
+
 .brand .right img {
-  margin-left: 1.5rem;
+  margin-left: 2%;
+}
+
+.brand .left img {
+  margin-right: 2%;
 }
 
 .persona .left,
@@ -614,7 +656,11 @@ body.long div.short {
 }
 
 .persona .right img {
-  margin-left: 1.5rem;
+  margin-left: 2%;
+}
+
+.persona .left img {
+  margin-left: 2%;
 }
 
 .journey .left,
@@ -624,7 +670,11 @@ body.long div.short {
 }
 
 .journey .right img {
-  margin-left: 1.5rem;
+  margin-left: 2%;
+}
+
+.journey .left img {
+  margin-left: 2%;
 }
 
 .framework .left,
@@ -634,8 +684,13 @@ body.long div.short {
 }
 
 .framework .right img {
-  margin-left: 1.5rem;
+  margin-left: 2%;
 }
+
+.framework .left img {
+  margin-left: 2%;
+}
+
 
 
 .toyota .left{
@@ -683,16 +738,27 @@ body.long div.short {
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 0.8rem;
   margin-top: 1rem;
 }
 //SECONDARY-NAV END
+
 @media (max-width:2100px) {
   .projects {
     padding-left: 6%;
     padding-right: 6%;
   }
 }
+
+@media(min-width: 2000px){
+  .content-wrapper{
+    margin: 0 25%;
+  }
+  .videoBanner{
+    margin: 5rem 25%;
+  }
+}
+
 @media (max-width:1875px) {
   .projects {
     padding-left: 0;
@@ -713,18 +779,45 @@ body.long div.short {
   .content-wrapper{
     margin: 0 5%;
   }
+  .videoBanner{
+    margin: 2rem 5%;
+  }
+
+  .section-heading{
+    margin-top: 3rem;
+  }
 }
+
+@media (max-width: 1200px){
+  #stickynav{
+    height: 10rem;
+  }
+
+  #stickynav ul{
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .content-toggle{
+    right: 0;
+    width: inherit;
+    text-align: center;
+    bottom: 20%;
+    height: auto;
+  }
+}
+
 @media (max-width: 1000px) {
   .banner {
     height: 60vh;
   }
 
   .banner-text h3 {
-    font-size: 24px;
+    font-size: 2.25rem;
   }
 
   .banner-text p {
-    font-size: 18px;
+    font-size: 1.25rem;
   }
 
   .glitch {
@@ -796,10 +889,25 @@ body.long div.short {
     margin-right: 0;
   }
 
+  .content-wrapper p, ol{
+    margin-left: 0;
+    margin-right:0;
+  }
+
+  #stickynav li{
+    margin-left: 1rem;
+
+  }
+
+
 }
 @media (max-width: 600px) {
   .banner {
-    height: 40vh;
+    height: 30vh;
+  }
+
+  .banner h1{
+    font-size: 2.5rem;
   }
 
   .flex-content {
@@ -811,9 +919,17 @@ body.long div.short {
     margin-right: 1rem;
   }
 
+  .intro.flex-content{
+    margin-top: 2rem;
+  }
+
   .intro p {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .problem.flex-content{
+    flex-direction: column;
   }
 }
 @media (max-width: 350px) {
