@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins', rel='stylesheet')
     link(rel="stylesheet" type="text/css" href="css/normalize.css")
     link(rel="stylesheet" type="text/css" href="css/jquery.background-video.css")
     link(rel="stylesheet" href="css/zoom.css")
@@ -18,7 +18,7 @@ body
     include components/nav.pug
     
     //-HERO 
-    section
+    section(class="videoBanner")
       div(class="videoWrapper")
         iframe(src='https://player.vimeo.com/video/246351729?title=0&byline=0&portrait=0', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
 
@@ -29,8 +29,11 @@ body
         p As the world’s largest auto manufacturer by volume, Toyota Motor Corporation’s commitment to safety has led their vehicles to consistently topping industry-standard safety rankings for the last decade. This commitment is a strong influence on the Toyota Research Institute, which seeks to continuously iterate their artificial intelligence and robotics technology to enhance safety and accessibility in mobility.
         p Due to the merits of our previous project VIA Journey, our team was generously given the opportunity to work with Chelsea Garber from Inamoto &amp; Co on a real client prompt from Toyota. With Chelsea as our mentor in addition to our amazing teachers (Russell Taylor &amp; Stevie Nguyen), we tackled the prompt: “how might we ease people into trusting self driving cars”?
         p Toyota Guardian is a mobile application that looks out for drivers throughout their vehicle ownership experience, leveraging existing Toyota technologies (particularly in automation and predictive intelligence) to build a transparent and trusting relationship today that extends into the self-driving tomorrow.
-        p Role:  Lead Writer &amp; Business Analyst, UX &amp; Content Strategist, Technologist, External Relations
-        p Results
+        p 
+          strong Role:  
+          | Lead Writer &amp; Business Analyst, UX &amp; Content Strategist, Technologist, External Relations
+        p 
+          strong Results:
         ul
           li analyzed Toyota’s extensive business portfolio, identified key strategic business units that aligned with digital solution
           li responsible for aligning specific aspect of business model with digital solution
@@ -38,40 +41,68 @@ body
           li responsible for the feasibility of implemented technologies and relevance to user experience
           li produced the majority of written content, including but not limited to product copy, presentation scripts, video voiceovers, and preliminary reports to teaching staff
       div(class="right")
-        p Team:  Sarah Tong, Michelle Ng, Gabriel Yeung, Grant Zou
-        p Resources
+        p 
+          strong Team:  
+          a(href="http://sarahtong.ca/") Sarah Tong, 
+          a(href="http://nmichelle.com/") Michelle Ng
+            | ,
+          a(href="http://gabrielyeung.com/") Gabriel Yeung
+            | , 
+          a(href="http://grantzou.com/") Grant Zou
+        p 
+          strong Resources:
         ul
-          li Experience Design: A Framework of Integrating Brand
-          li Google Ventures Sprints
-          li MAYA Principle
-          li Speculative Design: Futures Diagram
-          li Toyota Rail Annual Reports
-        p Timeline: 4 weeks
-        p Deliverables:
+          li 
+            a(href="http://www.experiencedesignthebook.com/the-book") 
+              | Experience Design: A Framework of Integrating Brand
+          li 
+            a(href="http://www.gv.com/sprint/") 
+              | Google Ventures Sprints
+          li
+            a(href="https://www.interaction-design.org/literature/article/design-for-the-future-but-balance-it-with-your-users-present")
+              | MAYA Principle
+          li 
+            a(href="http://www.dunneandraby.co.uk/content/books/690/0") 
+              | Speculative Design: Futures Diagram
+          li 
+            a(href="http://www.toyota-global.com/investors/ir_library/annual/") 
+              | Toyota Rail Annual Reports
+        p 
+          strong Timeline: 
+          | 4 weeks
+        p 
+          strong Deliverables:
         ul
-          li Presentation
-          li Product Video 
-          li Speculaitive Product Video
-          li Live Presentation 
-          
-    //- div(class="content-toggle")  
-    //-   h2 Reading Time:
-    //-   button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
-    //-   button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
-      
-  //- nav(id="stickynav")
-  //-   ul
-  //-     li
-  //-       a(href="#business") Business Context 
-  //-     li
-  //-       a(href="#process") Process 
-  //-     li
-  //-       a(href="#prototype") Prototype
-  //-     li
-  //-       a(href="#reflection") Reflection 
-      
+          li 
+            a(href="https://www.joshfan.com/s/toyota_week4_final.pdf") 
+              | Presentation
+          li 
+            a(href="https://vimeo.com/246351729") 
+              | Product Video 
+          li 
+            a(href="https://vimeo.com/246351870") 
+              | Speculative Product Video
+          li
+            a(href="https://photos.app.goo.gl/YqEd6XlTLN1zppYD2")
+              |  Live Presentation 
+
+  nav(id="stickynav")
+    ul
+      li
+        a(href="#business") Business Context 
+      li
+        a(href="#process") Process 
+      li
+        a(href="#prototype") Prototype
+      li
+        a(href="#reflection") Reflection 
+    div(class="content-toggle")
+      button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short") Quick Read
+      button(class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long") Extended Read
+
+
   div(class="content-wrapper")
-    h2 Business Context       
+    h2(class="section-heading") Business Context       
     section(id="business")
       div(class="problem short flex-content")
         div(class="full")
@@ -85,21 +116,8 @@ body
             li While the non-commercial Toyota Research Institute is the organization behind Toyota’s push for autonomous cars, our primary client Toyota Motor Corporation has the same responsibility as any other business to perform for its shareholders
             li Despite maintaining nearly double the sales volume of its competitors, Toyota’s growth has stagnated in the last four years, and competitors are beginning to close the sales gap
             li Toyota’s investment in the future has a long-term pay off, and until their unique approach to autonomous vehicles hit the market in 2021, Toyota expects no significant change in their financial condition
-            
-      div(class="problem long flex-content")
-        div(class="full")
-          h3 Problem 
-          img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cb3eec212d810a5cb5e7/1518586700314/Acrobat_2018-02-13_20-49-49.png?format=1500w"  data-action="zoom")
-            
-        div(class="full")
-          p Determining a relevant business problem for Toyota was the first obstacle we faced in this project. While many of our peers specifically selected clients with business problems, our assigned client was seeing success across its numerous business units. To further complicate things, the organization responsible for Toyota’s exploration into automation (Toyota Research Institute) was a non-commercial unit, with no immediate need for returns.
-          p To address this, I clarified the nature of our prompt and client with Chelsea and determined that parent Toyota Motor Corporation was the ultimate client of our project. Combined with research this resulted in three findings:
-          ol
-            li While the non-commercial Toyota Research Institute is the organization behind Toyota’s push for autonomous cars, our primary client Toyota Motor Corporation has the same responsibility as any other business to perform for its shareholders
-            li Despite maintaining nearly double the sales volume of its competitors, Toyota’s growth has stagnated in the last four years, and competitors are beginning to close the sales gap
-            li Toyota’s investment in the future has a long-term pay off, and until their unique approach to autonomous vehicles hit the market in 2021, Toyota expects no significant change in their financial condition
 
-    
+
       div(class="brand short flex-content")
         div(class="full")
           h3 Design Opportunity 
@@ -126,7 +144,7 @@ body
           p Toyota Guardian gives owners today a reason to value autonomous technology, by providing tangible benefits.  This builds trust in Toyota’s brand, and ultimately building a customer base that will remain receptive to any future products/technology that Toyota releases.
           p Thus, achieving our goal of making a measurable impact to Toyota today while easing people to trust in Toyota’s technology for the future.
           
-    h2 Process       
+    h2(class="section-heading") Process       
     section(id="process")
       div(class="persona flex-content")
         div(class="full")
@@ -176,7 +194,7 @@ body
           p Toyota Guardian seeks to address these missed opportunities by making Toyota’s technology meaningful, through providing driver insights, digestible vehicle diagnostics, and automated routines to help drivers make better decisions and focus on simply driving.
           img(src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a99a1fd71c10bf0158486b9/1520017927753/Acrobat_2018-03-02_11-11-50.png?format=1500w" data-action="zoom")
           
-    h2 Prototype       
+    h2(class="section-heading") Prototype       
     section(id="process")
       div(class="toyota prototype flex-content")
         div(class="left")
@@ -186,7 +204,7 @@ body
           p Upon opening the app, owners are presented with two call-to-actions, with a conversational introduction to the value proposition Toyota Guardian is offering in order to motivate commitment.
       
           
-    h2 Reflection       
+    h2(class="section-heading") Reflection       
     section(id="reflection")
       div(class="reflection flex-content")
         div(class="full")

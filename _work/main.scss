@@ -9,7 +9,7 @@ $josh-color: #295ca4;
 body {
   font-family: Poppins, Roboto, sans-serif;
   background-color: #fafafa;
-  border: 1rem solid #c1dbff;
+  border: 1rem solid $josh-color;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2;
+  font-size: 2rem;
 }
 
 p {
@@ -142,7 +142,7 @@ body.long div.short {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -487,6 +487,10 @@ body.long div.short {
   color: $josh-color;
   text-decoration: underline;
   margin-top: 10rem;
+}
+
+.projects-filter .section-heading{
+  margin-top: 1%;
 }
 
 
@@ -915,12 +919,16 @@ body.long div.short {
   }
 
   .content-wrapper p{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .intro.flex-content{
     margin-top: 2rem;
+  }
+
+  .problem .right p{
+    margin-left: 0;
   }
 
   .intro p {

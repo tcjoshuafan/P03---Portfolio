@@ -6,7 +6,7 @@
 body {
   font-family: Poppins, Roboto, sans-serif;
   background-color: #fafafa;
-  border: 1rem solid #c1dbff; }
+  border: 1rem solid #295ca4; }
 
 h1 {
   font-size: 4.5rem; }
@@ -18,7 +18,7 @@ h3 {
   font-size: 2.25rem; }
 
 h4 {
-  font-size: 2; }
+  font-size: 2rem; }
 
 p {
   font-family: Roboto, sans-serif;
@@ -136,7 +136,7 @@ body.long div.short {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 #via_hero {
@@ -182,59 +182,59 @@ body.long div.short {
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(53px, 9999px, 79px, 0); }
+    clip: rect(4px, 9999px, 24px, 0); }
   8.33333% {
-    clip: rect(57px, 9999px, 51px, 0); }
+    clip: rect(4px, 9999px, 74px, 0); }
   16.66667% {
-    clip: rect(33px, 9999px, 43px, 0); }
+    clip: rect(97px, 9999px, 53px, 0); }
   25% {
-    clip: rect(2px, 9999px, 47px, 0); }
+    clip: rect(13px, 9999px, 51px, 0); }
   33.33333% {
-    clip: rect(84px, 9999px, 64px, 0); }
+    clip: rect(88px, 9999px, 79px, 0); }
   41.66667% {
-    clip: rect(5px, 9999px, 90px, 0); }
+    clip: rect(43px, 9999px, 69px, 0); }
   50% {
-    clip: rect(57px, 9999px, 93px, 0); }
+    clip: rect(42px, 9999px, 39px, 0); }
   58.33333% {
-    clip: rect(3px, 9999px, 79px, 0); }
+    clip: rect(31px, 9999px, 100px, 0); }
   66.66667% {
-    clip: rect(71px, 9999px, 28px, 0); }
+    clip: rect(6px, 9999px, 6px, 0); }
   75% {
-    clip: rect(70px, 9999px, 40px, 0); }
+    clip: rect(56px, 9999px, 1px, 0); }
   83.33333% {
-    clip: rect(49px, 9999px, 16px, 0); }
+    clip: rect(20px, 9999px, 74px, 0); }
   91.66667% {
-    clip: rect(94px, 9999px, 92px, 0); }
+    clip: rect(30px, 9999px, 42px, 0); }
   100% {
-    clip: rect(55px, 9999px, 30px, 0); } }
+    clip: rect(47px, 9999px, 71px, 0); } }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(53px, 9999px, 79px, 0); }
+    clip: rect(4px, 9999px, 24px, 0); }
   8.33333% {
-    clip: rect(57px, 9999px, 51px, 0); }
+    clip: rect(4px, 9999px, 74px, 0); }
   16.66667% {
-    clip: rect(33px, 9999px, 43px, 0); }
+    clip: rect(97px, 9999px, 53px, 0); }
   25% {
-    clip: rect(2px, 9999px, 47px, 0); }
+    clip: rect(13px, 9999px, 51px, 0); }
   33.33333% {
-    clip: rect(84px, 9999px, 64px, 0); }
+    clip: rect(88px, 9999px, 79px, 0); }
   41.66667% {
-    clip: rect(5px, 9999px, 90px, 0); }
+    clip: rect(43px, 9999px, 69px, 0); }
   50% {
-    clip: rect(57px, 9999px, 93px, 0); }
+    clip: rect(42px, 9999px, 39px, 0); }
   58.33333% {
-    clip: rect(3px, 9999px, 79px, 0); }
+    clip: rect(31px, 9999px, 100px, 0); }
   66.66667% {
-    clip: rect(71px, 9999px, 28px, 0); }
+    clip: rect(6px, 9999px, 6px, 0); }
   75% {
-    clip: rect(70px, 9999px, 40px, 0); }
+    clip: rect(56px, 9999px, 1px, 0); }
   83.33333% {
-    clip: rect(49px, 9999px, 16px, 0); }
+    clip: rect(20px, 9999px, 74px, 0); }
   91.66667% {
-    clip: rect(94px, 9999px, 92px, 0); }
+    clip: rect(30px, 9999px, 42px, 0); }
   100% {
-    clip: rect(55px, 9999px, 30px, 0); } }
+    clip: rect(47px, 9999px, 71px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -250,59 +250,59 @@ body.long div.short {
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(34px, 9999px, 95px, 0); }
+    clip: rect(46px, 9999px, 87px, 0); }
   8.33333% {
-    clip: rect(27px, 9999px, 29px, 0); }
+    clip: rect(69px, 9999px, 50px, 0); }
   16.66667% {
-    clip: rect(64px, 9999px, 51px, 0); }
+    clip: rect(26px, 9999px, 15px, 0); }
   25% {
-    clip: rect(35px, 9999px, 70px, 0); }
+    clip: rect(59px, 9999px, 33px, 0); }
   33.33333% {
-    clip: rect(35px, 9999px, 51px, 0); }
+    clip: rect(78px, 9999px, 9px, 0); }
   41.66667% {
-    clip: rect(84px, 9999px, 35px, 0); }
+    clip: rect(92px, 9999px, 26px, 0); }
   50% {
-    clip: rect(21px, 9999px, 42px, 0); }
+    clip: rect(53px, 9999px, 56px, 0); }
   58.33333% {
-    clip: rect(23px, 9999px, 65px, 0); }
+    clip: rect(54px, 9999px, 72px, 0); }
   66.66667% {
-    clip: rect(30px, 9999px, 62px, 0); }
+    clip: rect(68px, 9999px, 9px, 0); }
   75% {
-    clip: rect(86px, 9999px, 50px, 0); }
+    clip: rect(87px, 9999px, 53px, 0); }
   83.33333% {
-    clip: rect(8px, 9999px, 75px, 0); }
+    clip: rect(22px, 9999px, 97px, 0); }
   91.66667% {
-    clip: rect(9px, 9999px, 84px, 0); }
+    clip: rect(71px, 9999px, 45px, 0); }
   100% {
-    clip: rect(7px, 9999px, 8px, 0); } }
+    clip: rect(78px, 9999px, 93px, 0); } }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(34px, 9999px, 95px, 0); }
+    clip: rect(46px, 9999px, 87px, 0); }
   8.33333% {
-    clip: rect(27px, 9999px, 29px, 0); }
+    clip: rect(69px, 9999px, 50px, 0); }
   16.66667% {
-    clip: rect(64px, 9999px, 51px, 0); }
+    clip: rect(26px, 9999px, 15px, 0); }
   25% {
-    clip: rect(35px, 9999px, 70px, 0); }
+    clip: rect(59px, 9999px, 33px, 0); }
   33.33333% {
-    clip: rect(35px, 9999px, 51px, 0); }
+    clip: rect(78px, 9999px, 9px, 0); }
   41.66667% {
-    clip: rect(84px, 9999px, 35px, 0); }
+    clip: rect(92px, 9999px, 26px, 0); }
   50% {
-    clip: rect(21px, 9999px, 42px, 0); }
+    clip: rect(53px, 9999px, 56px, 0); }
   58.33333% {
-    clip: rect(23px, 9999px, 65px, 0); }
+    clip: rect(54px, 9999px, 72px, 0); }
   66.66667% {
-    clip: rect(30px, 9999px, 62px, 0); }
+    clip: rect(68px, 9999px, 9px, 0); }
   75% {
-    clip: rect(86px, 9999px, 50px, 0); }
+    clip: rect(87px, 9999px, 53px, 0); }
   83.33333% {
-    clip: rect(8px, 9999px, 75px, 0); }
+    clip: rect(22px, 9999px, 97px, 0); }
   91.66667% {
-    clip: rect(9px, 9999px, 84px, 0); }
+    clip: rect(71px, 9999px, 45px, 0); }
   100% {
-    clip: rect(7px, 9999px, 8px, 0); } }
+    clip: rect(78px, 9999px, 93px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
@@ -567,6 +567,9 @@ body.long div.short {
   color: #295ca4;
   text-decoration: underline;
   margin-top: 10rem; }
+
+.projects-filter .section-heading {
+  margin-top: 1%; }
 
 #stickynav {
   margin-top: 3rem;
@@ -915,10 +918,12 @@ body.long div.short {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .content-wrapper p {
-    margin-left: 1rem;
-    margin-right: 1rem; }
+    margin-left: 0;
+    margin-right: 0; }
   .intro.flex-content {
     margin-top: 2rem; }
+  .problem .right p {
+    margin-left: 0; }
   .intro p {
     margin-left: 0;
     margin-right: 0; }
