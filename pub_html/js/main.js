@@ -24,7 +24,6 @@ $(document).ready(function(){
 });
 
 $('.content-toggle .filter-button').on('click', function (e) {
-   console.log(e);
    if ($(e.target).data('filter') === '.long') {
      $('body').addClass('long');
    } else {
@@ -54,7 +53,6 @@ $('.content-toggle .filter-button').on('click', function (e) {
  $(document).ready(function() {
 			// grab the initial top offset of the navigation
 		   	var stickyNavTop = $('.stickynav').offset().top;
-        console.log(stickyNavTop)
 
 		   	// our function that decides whether the navigation bar should have "fixed" css position or not.
 		   	var stickyNav = function(){
