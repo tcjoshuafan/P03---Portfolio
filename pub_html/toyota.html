@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.background-video.css">
     <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>JF - Toyota Guardian </title>
@@ -74,7 +73,7 @@
       </div>
     </section>
   </div>
-  <nav id="stickynav">
+  <nav class="stickynav">
     <ul>
       <li><a href="#business">Business Context </a></li>
       <li><a href="#process">Process </a></li>
@@ -82,14 +81,14 @@
       <li><a href="#reflection">Reflection </a></li>
     </ul>
     <div class="content-toggle">
-      <button class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short">Quick Read</button>
-      <button class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long">Extended Read</button>
+      <button class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".short">10m Read</button>
+      <button class="filter-button hvr-shutter-out-horizontal" type="button" data-filter=".long">20m Read</button>
     </div>
   </nav>
   <div class="content-wrapper">
     <h2 class="section-heading">Business Context       </h2>
     <section id="business">
-      <div class="problem short flex-content">
+      <div class="problem flex-content">
         <div class="full">
           <h3>Problem </h3><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cb3eec212d810a5cb5e7/1518586700314/Acrobat_2018-02-13_20-49-49.png?format=1500w" data-action="zoom">
         </div>
@@ -103,7 +102,24 @@
           </ol>
         </div>
       </div>
-      <div class="brand short flex-content">
+      <div class="brand short  flex-content">
+        <div class="full">
+          <h3>Design Opportunity </h3>
+          <p>With fully autonomous vehicles still under development and too far off to demonstrate a clear value proposition or user base, we reframed our original prompt with our project goals in mind:</p>
+          <p> <em>Original: How might we ease people into trusting self-driving cars?</em></p>
+          <p> <strong>Reframe: How might we leverage Toyota’s existing product strategy to demonstrate the value of future technologies, today? </strong></p><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a83cd8b4192025a996503c0/1518587288359/business.png?format=1000w" data-action="zoom">
+          <p>This concept of progressive iteration draws from one of Toyota’s core principles. With Kaizen, or continuous improvement we saw an opportunity to first develop and improve Toyota’s current product value proposition, building trust and transparency with Toyota’s existing autonomous technology. This would provide an immediate and tangible preview of Toyota’s future technologies, extending their value proposition as autonomous technology continues to be released.</p>
+          <p>Toyota Guardian unifies both the business problem and design opportunity by: </p>
+          <ol> 
+            <li>More effectively using the existing safety technologies found in Toyota’s current products to demonstrate immediate benefits of automation and predictive intelligence</li>
+            <li>Increase the value proposition found in Toyota’s current product strategy, in order to boost stagnating sales</li>
+            <li>Create a direct-to-consumer channel for Toyota to deploy future technologies; as Toyota learns, Toyota Guardian can be updated for the owner’s benefit</li>
+          </ol>
+          <p>Toyota Guardian gives owners today a reason to value autonomous technology, by providing tangible benefits.  This builds trust in Toyota’s brand, and ultimately building a customer base that will remain receptive to any future products/technology that Toyota releases.</p>
+          <p>Thus, achieving our goal of making a measurable impact to Toyota today while easing people to trust in Toyota’s technology for the future.</p>
+        </div>
+      </div>
+      <div class="brand long flex-content">
         <div class="full">
           <h3>Design Opportunity </h3>
           <p>With fully autonomous vehicles still under development and too far off to demonstrate a clear value proposition or user base, we reframed our original prompt with our project goals in mind:</p>
@@ -167,12 +183,79 @@
       </div>
     </section>
     <h2 class="section-heading">Prototype       </h2>
-    <section id="process">
+    <section id="prototype">
       <div class="toyota prototype flex-content">
         <div class="left"><img src="https://static1.squarespace.com/static/5a38be54f43b5528f61424f6/t/5a856f1ce2c4835ce8f659ed/1518694177049/4+copy-100.jpg?format=500w" data-action="zoom"></div>
         <div class="right">
           <h3>Onboarding </h3>
           <p>Upon opening the app, owners are presented with two call-to-actions, with a conversational introduction to the value proposition Toyota Guardian is offering in order to motivate commitment.</p>
+        </div>
+      </div>
+      <div class="toyota prototype flex-content">
+        <div class="left">
+          <video src="videos/dashboard.mp4" controls></video>
+        </div>
+        <div class="right">
+          <h3>Dashboard </h3>
+          <p>On the dashboard, owners are provided snapshots of their vehicle in easy to understand language, providing a match between the system and the real world. From mileage and fuel consumption to weather and road conditions, information here is intended to help the driver make key decisions.</p>
+        </div>
+      </div>
+      <div class="toyota prototype flex-content">
+        <div class="left">
+          <video src="videos/activity-recent.mp4" controls></video>
+        </div>
+        <div class="right">
+          <h3>Activity - Recent </h3>
+          <p>Between trips, Toyota Guardian provides a drivers’ log of events, showing trip details such as destination and fuel consumption.</p>
+        </div>
+      </div>
+      <div class="toyota prototype flex-content">
+        <div class="left">
+          <video src="videos/activity-highlights.mp4" controls></video>
+        </div>
+        <div class="right">
+          <h3>Activity - Highlights </h3>
+          <p>Under Highlights, any notable events that trigger Toyota’s safety sensors is featured, with an incident report being generated as well as dashcam footage provided.</p>
+        </div>
+      </div>
+      <div class="toyota prototype flex-content">
+        <div class="left">
+          <video src="videos/business.mp4" controls></video>
+        </div>
+        <div class="right">
+          <h3>Routines - Notification</h3>
+          <p>With routines, we wanted to highlight the benefits of automation and predictive artificial intelligence. If Toyota Guardian recognizes repeat behavior of the driver, such as regular drives to home and work, it will suggest automating certain aspects of the vehicle, minimizing the user’s memory load through recognition rather than recall.</p>
+        </div>
+      </div>
+      <div class="toyota prototype flex-content">
+        <div class="left">
+          <video src="videos/routines2.mp4" controls></video>
+        </div>
+        <div class="right">
+          <h3>Routines - Saved</h3>
+          <p>Users can create their own routines as well, such as warming up the car and preloading navigation onto the car’s onboard infotainment system. This way, as soon as owners get into the vehicle, the app hands off to the vehicle, reducing routine cognitive overhead and allowing the owners to simply drive</p>
+        </div>
+      </div>
+    </section>
+    <section id="speculative">
+      <div class="speculative flex-content">
+        <div class="full">
+          <h2 class="section-heading">Speculative Opportunity </h2>
+        </div>
+        <div class="full">
+          <div class="videoWrapper">
+            <iframe src="https://player.vimeo.com/video/246351870?byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="left">
+          <p>Up until this point, Toyota Guardian has been designed to maximize the value proposition of Toyota’s existing vehicles to increase their competitive advantage in the fact of stagnating sales. Toyota Guardian achieves this by making automation and predictive intelligence meaningful and immediately valuable, easing both new and existing leaseholders into trusting new Toyota technologies as they become available. However, Chelsea encouraged us to push further and to speculate how Toyota Guardian could evolve alongside autonomous driving. We would move from the ‘probable’ project spectrum of the Futures Diagram, and investigate what else was possible.</p>
+          <p>As autonomous driving begins to disrupt traditional industries and shifting the economy towards subscription-based transportation services, we began to speculate how our Toyota Guardian could iterate and evolve in order to cope with the socio-economic implications.</p>
+          <p>Recently, Toyota has expressed interest in the concept of blockchain smart contracts. An interesting possibility would be allowing Toyota owners to rent out their vehicle’s unused time to earn money. This would balance well with our persona of young leaseholders, as part of their motivation for leasing is because of the lower upfront cost and preference for subscription-based services.</p>
+          <p>Recently, Toyota has expressed interest in the concept of blockchain smart contracts. An interesting possibility would be allowing Toyota owners to rent out their vehicle’s unused time to earn money. This would balance well with our persona of young leaseholders, as part of their motivation for leasing is because of the lower upfront cost and preference for subscription-based services.</p>
+          <p>Ultimately, it would use the receptive audience built up over the next two years through Toyota Guardian and introduce them to the new era of mobility consumption in a familiar and valuable way.</p>
+        </div>
+        <div class="right">
+          <video src="videos/carshare.mp4" controls></video>
         </div>
       </div>
     </section>
@@ -204,20 +287,20 @@
     </div>
   </section>
   <section class="projects">
-    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="via.html"><img src="images/gallery/via.png" alt=""></a>
+    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="via.html"><img src="images/gallery/via.png" alt="train in nature"></a>
       <h3>VIA Journey</h3>
       <p>A digital solution designed to address VIA Rail's declining ridership, VIA Journey realigns VIA Rail's brand proposition through the concept that a journey is as valuable as the destination. </p>
     </div>
-    <div class="mix cat-mark projects-container"><a class="hvr-bob" href="#"><img src="images/gallery/intel-extreme-rig.png" alt=""></a>
+    <div class="mix cat-mark projects-container"><a class="hvr-bob" href="intel.html"><img src="images/gallery/intel-extreme-rig.png" alt="computers on desk"></a>
       <h3>Intel Extreme Rig Challenge 2017</h3>
       <p>Collaborated with Intel™ and other industry vendor/partners to prepare and execute an integrated product marketing strategy, concluding with an exhibit at PAX East, an 80 000 attendee convention. </p>
     </div>
-    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="toyota.html"><img src="images/gallery/toyota-guardian.png" alt=""></a>
+    <div class="mix cat-ux projects-container"><a class="hvr-bob" href="toyota.html"><img src="images/gallery/toyota-guardian.png" alt="autonomous vehicles"></a>
       <h3>Toyota Guardian</h3>
       <p>A mobile application that leverages Toyota's existing products and brand equity to begin building trust and credibility in Toyota's future autonomous technologies.</p>
       <p>Mentored by Chelsea Garber from ★ Inamoto &amp; Co.</p>
     </div>
-    <div class="mix cat-mark projects-container"><a class="hvr-bob" href="market_research.html"><img src="images/gallery/market-research.png" alt=""></a>
+    <div class="mix cat-mark projects-container"><a class="hvr-bob" href="intel.html"><img src="images/gallery/market-research.png" alt="computer graphics card"></a>
       <h3>Market Research + Analysis</h3>
       <p>A North American-wide market research project, with competitor analysis and business recommendations that were a major contribution to a 30% annual sales growth.</p>
     </div>
@@ -229,6 +312,8 @@
   </section>
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/mixitup.min.js"></script>
+  <script src="js/scrollspy.js"></script>
+  <script src="js/stickynav.js"></script>
   <script src="js/main.js"></script>
   <script src="js/mixit_trigger.js"></script>
   <script src="js/transition.js"></script>

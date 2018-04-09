@@ -576,14 +576,30 @@ body.long div.short {
   height: auto;
 }
 
+.toyota .left video{
+  width: 100%;
+  height: auto;
+}
+
+.toyota .prototype{
+  margin-top: 2rem;
+}
+
+.prototype .right{
+  flex-basis: 95%;
+}
+
+
 .brand.flex-content,
 .framework.flex-content,
 .journey.flex-content,
 .persona.flex-content,
-.problem.flex-content, .thinking.flex-content, .metaphor.flex-content {
+.problem.flex-content, .thinking.flex-content, .metaphor.flex-content, .speculative.flex-content {
   display: flex;
   flex-wrap: wrap;
 }
+
+
 
 .intro ul {
   padding-left: 2rem;
@@ -625,6 +641,31 @@ body.long div.short {
 
 .full {
   flex-basis: 100%;
+}
+
+.speculative{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speculative .left{
+  flex-basis: 70%;
+}
+
+.speculative .left p{
+  padding: 0 2rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.speculative .right{
+  flex-basis: 30%;
+
+}
+
+.speculative video{
+  height: auto;
+  width: 100%;
 }
 
 .problem .left,
@@ -1071,6 +1112,7 @@ body.long div.short {
     margin-left: 0;
     margin-right: 0;
   }
+
 
   .content-wrapper p, ol{
     margin-left: 0;
