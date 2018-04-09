@@ -580,7 +580,7 @@ body.long div.short {
 .framework.flex-content,
 .journey.flex-content,
 .persona.flex-content,
-.problem.flex-content {
+.problem.flex-content, .thinking.flex-content, .metaphor.flex-content {
   display: flex;
   flex-wrap: wrap;
 }
@@ -679,6 +679,20 @@ body.long div.short {
   margin-right: 2%;
 }
 
+.thinking .left,
+.thinking .right {
+  margin-top: 1rem;
+  flex-basis: 50%;
+}
+
+.thinking .right img {
+  margin-left: 2%;
+}
+
+.thinking .left img {
+  margin-left: 2%;
+}
+
 .persona .left,
 .persona .right {
   margin-top: 1rem;
@@ -718,6 +732,20 @@ body.long div.short {
 }
 
 .framework .left img {
+  margin-left: 2%;
+}
+
+.metaphor .left,
+.metaphor .right {
+  margin-top: 1rem;
+  flex-basis: 50%;
+}
+
+.metaphor .right img {
+  margin-left: 2%;
+}
+
+.metaphor .left img {
   margin-left: 2%;
 }
 
@@ -774,8 +802,8 @@ body.long div.short {
 
 .footer-links{
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .footer-links a{
@@ -783,6 +811,14 @@ body.long div.short {
   color: black;
   text-decoration: none;
   width: 100%;
+}
+
+.footer-links a:first-of-type{
+  margin-left: 20%;
+}
+
+.footer-links a:last-of-type{
+  margin-right: 20%;
 }
 
 .footer-links a:active, .footer-links a:hover{
@@ -855,6 +891,37 @@ body.long div.short {
   padding-left: 2rem;
   margin-top: 2rem;
 
+}
+
+#style-menu{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #899da3;
+}
+
+.color-swatch{
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #899da3;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#white{
+  background-color: white;
+}
+
+#light-grey{
+  background-color: #fafafa;
+}
+
+#blue{
+  background-color: $josh-color;
+}
+
+#black{
+  background-color: black;
 }
 
 //SECONDARY-NAV END

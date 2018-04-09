@@ -8,7 +8,7 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="css/normalize.css")
     link(rel="stylesheet" href="css/zoom.css")
     link(rel="stylesheet" type="text/css" href="css/main.css")
-    title JF - VIA Journey
+    title JF - Style Guide 
 
 body
   header
@@ -19,7 +19,7 @@ body
       div(class="banner-text")
         h1 IAT 339: Project 03
         p Portfolio
-        div(class="glitch" id="glitch-ux" data-text!="Style&nbsp;Guide") Style&nbsp;Guide
+        div(class="glitch" data-text!="Style&nbsp;Guide") Style&nbsp;Guide
         
   div(class="content-wrapper")
     div(class="styleguide")
@@ -138,14 +138,23 @@ body
           
           
     h2(class="section-heading") Main Navigation
-  include components/nav.pug
-        
+    div(class="style-menu")
+      include components/nav.pug
+    
+    div(class="styleguide")
+      h2(class="section-heading") Color Swatch
+      div(class="color-swatch" id="white")
+      div(class="color-swatch" id="light-grey")
+      div(class="color-swatch" id="blue")
+      div(class="color-swatch" id="black")
   
     
-    
-    
-    
-    
+
+    include components/footer.pug 
+    script(src="js/jquery-3.3.1.js")
+    script(src="js/mixitup.min.js")
+    script(src="js/main.js")
+    script(src="js/mixit_trigger.js")
     
     
     
